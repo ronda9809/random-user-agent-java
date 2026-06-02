@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1a202c;
+}
+
+/* Smooth focus styles for keyboard / accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #fdb913;
+  outline-offset: 2px;
+}

@@ -1,0 +1,542 @@
+{
+  "id": "test10",
+  "title": "Practice Exam 10",
+  "description": "An additional full-length 36-question simulated California Class C knowledge exam. Challenging level.",
+  "questions": [
+    {
+      "id": "t10-q1",
+      "question": "You're entering a freeway and the acceleration lane is short. The biggest mistake you can make is to:",
+      "choices": [
+        "Enter the freeway well below traffic speed, forcing others to brake",
+        "Match traffic speed before merging",
+        "Signal early and check your blind spot",
+        "Pick a safe gap to merge into"
+      ],
+      "correct_answer": 0,
+      "explanation": "Merging far below traffic speed is dangerous—use the ramp to reach traffic speed so you can blend into a gap, even when the ramp is short.",
+      "topic": "Freeway Driving",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Entering Freeways"
+    },
+    {
+      "id": "t10-q2",
+      "question": "You're in the carpool lane and must exit the freeway soon. You should:",
+      "choices": [
+        "Exit the HOV lane where the line is dashed and merge right in stages, early",
+        "Wait until your exit, then cut across all lanes",
+        "Cross the double lines whenever convenient",
+        "Stop and wait for a gap"
+      ],
+      "correct_answer": 0,
+      "explanation": "Leave the HOV lane only where the line is broken, then change lanes one at a time toward your exit. Plan the moves well ahead.",
+      "topic": "Freeway Driving",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Carpool Lanes"
+    },
+    {
+      "id": "t10-q3",
+      "question": "Your tire blows out on the freeway and the car pulls hard to one side. You should:",
+      "choices": [
+        "Hold the wheel firmly, ease off the gas, and steer straight before slowing to the shoulder",
+        "Brake hard right away",
+        "Let go of the wheel briefly",
+        "Accelerate to regain control"
+      ],
+      "correct_answer": 0,
+      "explanation": "Grip the wheel, take your foot off the gas, and keep the car straight; brake gently only after it slows, then ease onto the shoulder.",
+      "topic": "Freeway Driving",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Handling Emergencies"
+    },
+    {
+      "id": "t10-q4",
+      "question": "At a sobriety checkpoint you are lawfully arrested for DUI. The implied consent law means you:",
+      "choices": [
+        "Must submit to a breath or blood test or face automatic license suspension",
+        "May refuse all testing with no consequence",
+        "Can choose to be tested next week",
+        "Are exempt if you were under the limit"
+      ],
+      "correct_answer": 0,
+      "explanation": "By driving you consented to chemical testing after a lawful DUI arrest. Refusal results in an automatic suspension plus added penalties.",
+      "topic": "Alcohol & Drugs",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Implied Consent"
+    },
+    {
+      "id": "t10-q5",
+      "question": "How does alcohol most affect your driving even at low levels?",
+      "choices": [
+        "It slows reaction time and impairs judgment, vision, and coordination",
+        "It sharpens reflexes",
+        "It improves night vision",
+        "It has no effect below 0.08%"
+      ],
+      "correct_answer": 0,
+      "explanation": "Alcohol degrades reaction time, judgment, vision, and coordination starting at low levels—long before the 0.08% legal threshold.",
+      "topic": "Alcohol & Drugs",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Effects of Alcohol"
+    },
+    {
+      "id": "t10-q6",
+      "question": "A safe driver treats a hands-free phone conversation as:",
+      "choices": [
+        "Still a distraction—best avoided, with calls saved for when stopped",
+        "Completely risk-free",
+        "Safer than talking to a passenger",
+        "Required to pass the time"
+      ],
+      "correct_answer": 0,
+      "explanation": "Hands-free is legal for adults but still mentally distracting. When possible, save calls for when you're safely stopped.",
+      "topic": "Distracted Driving",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Cognitive Distraction"
+    },
+    {
+      "id": "t10-q7",
+      "question": "You're driving and feel the urge to check a notification on your phone. The safest habit is to:",
+      "choices": [
+        "Leave the phone alone until you've parked—silence or 'Do Not Disturb' helps",
+        "Glance at it quickly at speed",
+        "Check it at the next red light",
+        "Hold it low and read while driving"
+      ],
+      "correct_answer": 0,
+      "explanation": "Use 'Do Not Disturb While Driving' and leave the phone untouched until parked. Even quick glances or red-light checks are risky and largely illegal.",
+      "topic": "Distracted Driving",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Avoiding Distractions"
+    },
+    {
+      "id": "t10-q8",
+      "question": "A driver under 18 may use a wireless device while driving:",
+      "choices": [
+        "Only to contact emergency services",
+        "Hands-free for calls and navigation",
+        "For texting at red lights",
+        "Any way an adult can"
+      ],
+      "correct_answer": 0,
+      "explanation": "Provisional (under-18) drivers may not use any wireless device while driving except for a genuine emergency, even hands-free.",
+      "topic": "Distracted Driving",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Teen Cell Phone Restrictions"
+    },
+    {
+      "id": "t10-q9",
+      "question": "A steady yellow light means the signal is about to turn red. You should:",
+      "choices": [
+        "Stop if you can do so safely; if you're too close, continue with caution",
+        "Always speed up to beat the red",
+        "Always slam on the brakes",
+        "Treat it like a flashing yellow"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yellow is a warning to stop if you safely can. Only continue through if stopping would be unsafe (risking a rear-end collision).",
+      "topic": "Traffic Signals",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Traffic Signal Lights"
+    },
+    {
+      "id": "t10-q10",
+      "question": "A red ball with a green left arrow is displayed. Cross traffic and oncoming traffic for the left turn are:",
+      "choices": [
+        "Stopped, giving you a protected left turn",
+        "Free to proceed against you",
+        "Required to yield to you only if they see you",
+        "Unaffected by your signal"
+      ],
+      "correct_answer": 0,
+      "explanation": "A green left arrow means a protected turn—oncoming traffic faces a red, so you can turn left. Watch for pedestrians and finish before the arrow ends.",
+      "topic": "Traffic Signals",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Signal Arrows"
+    },
+    {
+      "id": "t10-q11",
+      "question": "A signal is completely dark at a busy intersection during a blackout. The safest assumption is:",
+      "choices": [
+        "Treat it as an all-way stop and proceed in turn",
+        "The biggest road has the right of way",
+        "Drive through without stopping",
+        "Wait until power is restored"
+      ],
+      "correct_answer": 0,
+      "explanation": "A dark signal must be treated as a four-way (all-way) stop. Stop, then take turns proceeding when it's safe.",
+      "topic": "Traffic Signals",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Inoperative Signals"
+    },
+    {
+      "id": "t10-q12",
+      "question": "You're in a lane that a sign says will become 'EXIT ONLY' ahead, but you want to stay on the freeway. You should:",
+      "choices": [
+        "Merge left out of that lane before the exit-only section begins",
+        "Stay in the lane; you can change your mind at the exit",
+        "Stop at the gore and back up",
+        "Straddle the lane line"
+      ],
+      "correct_answer": 0,
+      "explanation": "An exit-only lane leaves the freeway. Merge left early, while you still can, if you intend to continue.",
+      "topic": "Lane Changes",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Exit-Only Lanes"
+    },
+    {
+      "id": "t10-q13",
+      "question": "Before changing lanes you check your mirror and it looks clear, but you should still:",
+      "choices": [
+        "Turn your head to check the blind spot the mirror can't show",
+        "Move over immediately",
+        "Rely on the mirror alone",
+        "Honk before moving"
+      ],
+      "correct_answer": 0,
+      "explanation": "Mirrors miss a blind spot big enough to hide a car or motorcycle. A quick head turn confirms the lane is truly clear before you move.",
+      "topic": "Lane Changes",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Blind Spots"
+    },
+    {
+      "id": "t10-q14",
+      "question": "A solid yellow line next to a broken yellow line, with the solid line on your side, means:",
+      "choices": [
+        "You may not pass; oncoming traffic on the broken-line side may",
+        "You may pass when clear",
+        "Both directions may pass",
+        "Neither direction may pass"
+      ],
+      "correct_answer": 0,
+      "explanation": "The line on YOUR side governs you: a solid line means no passing. The opposing side with a broken line may pass.",
+      "topic": "Lane Changes",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Pavement Markings"
+    },
+    {
+      "id": "t10-q15",
+      "question": "A regulatory white sign reads 'ONE WAY' with an arrow. You must:",
+      "choices": [
+        "Travel only in the direction of the arrow",
+        "Yield to oncoming traffic",
+        "Treat the street as two-way at night",
+        "Stop before entering"
+      ],
+      "correct_answer": 0,
+      "explanation": "A 'ONE WAY' sign means all traffic moves in the arrow's direction. Never enter or drive against it.",
+      "topic": "Road Signs",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Regulatory Signs"
+    },
+    {
+      "id": "t10-q16",
+      "question": "A yellow diamond sign shows a red car and a black car with arrows pointing toward each other on a divided line. This warns of:",
+      "choices": [
+        "A two-way traffic section ahead (a divided road becomes two-way)",
+        "A passing zone",
+        "A merge from the right",
+        "A one-way street"
+      ],
+      "correct_answer": 0,
+      "explanation": "This sign warns that a divided highway is ending and you'll meet two-way traffic. Keep right and don't pass where unsafe.",
+      "topic": "Road Signs",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Warning Signs"
+    },
+    {
+      "id": "t10-q17",
+      "question": "A diamond-shaped yellow sign showing a merging arrow from the right means:",
+      "choices": [
+        "Traffic may enter from the right ahead; adjust speed or position to allow merging",
+        "You must exit to the right",
+        "The right lane ends and you must merge right",
+        "No trucks in the right lane"
+      ],
+      "correct_answer": 0,
+      "explanation": "A merge warning tells you another road joins ahead. Be ready for entering traffic and cooperate to let it blend in safely.",
+      "topic": "Road Signs",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Warning Signs"
+    },
+    {
+      "id": "t10-q18",
+      "question": "At 65 mph, the 3-second following rule corresponds to roughly:",
+      "choices": [
+        "About 285 feet of space",
+        "Two car lengths",
+        "About 65 feet",
+        "One car length per 5 mph"
+      ],
+      "correct_answer": 0,
+      "explanation": "At ~65 mph you cover about 95 feet per second, so 3 seconds is roughly 285 feet. The time rule scales with speed; fixed car-lengths don't.",
+      "topic": "Following Distance",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — The 3-Second Rule"
+    },
+    {
+      "id": "t10-q19",
+      "question": "When you are being tailgated, increasing your own following distance helps because it:",
+      "choices": [
+        "Lets you brake gradually, giving the tailgater more time to react",
+        "Makes the tailgater back off instantly",
+        "Allows you to brake harder",
+        "Has no real effect"
+      ],
+      "correct_answer": 0,
+      "explanation": "A bigger gap ahead means any slowdown can be gentle and gradual, reducing the chance the tailgater rear-ends you.",
+      "topic": "Following Distance",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Being Followed Too Closely"
+    },
+    {
+      "id": "t10-q20",
+      "question": "Your headlights show about 350 feet ahead at night. To avoid 'overdriving' your lights you should keep a speed at which you can stop within:",
+      "choices": [
+        "That lit distance",
+        "Twice that distance",
+        "Any distance you choose",
+        "Half that distance plus reaction time"
+      ],
+      "correct_answer": 0,
+      "explanation": "Drive slow enough to stop within the distance your headlights reveal. Going faster means you can't stop for something that suddenly appears in range.",
+      "topic": "Following Distance",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Driving at Night"
+    },
+    {
+      "id": "t10-q21",
+      "question": "On a wet freeway at high speed your steering suddenly feels light and unresponsive. You are likely:",
+      "choices": [
+        "Hydroplaning—ease off the gas and hold the wheel steady",
+        "Out of fuel—accelerate",
+        "Experiencing brake fade—brake harder",
+        "Fine—maintain speed"
+      ],
+      "correct_answer": 0,
+      "explanation": "Light, vague steering on standing water signals hydroplaning. Lift off the accelerator gently and keep the wheel steady until the tires regrip; prevent it by slowing in the rain.",
+      "topic": "Speed Limits",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Hydroplaning"
+    },
+    {
+      "id": "t10-q22",
+      "question": "Posted limits assume ideal conditions. On a crowded, rainy night, a safe speed is:",
+      "choices": [
+        "Often below the posted limit, based on traffic and visibility",
+        "Exactly the posted limit",
+        "Above the limit to keep up with the brave drivers",
+        "Whatever the car ahead is doing"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Basic Speed Law requires adjusting to conditions. Crowding, rain, and darkness usually call for a speed below the posted maximum.",
+      "topic": "Speed Limits",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Basic Speed Law"
+    },
+    {
+      "id": "t10-q23",
+      "question": "The maximum speed when towing a trailer on a California freeway is:",
+      "choices": ["55 mph", "65 mph", "70 mph", "60 mph"],
+      "correct_answer": 0,
+      "explanation": "Vehicles towing trailers are limited to 55 mph statewide, regardless of a higher posted limit for cars.",
+      "topic": "Speed Limits",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Speed Limits for Trailers"
+    },
+    {
+      "id": "t10-q24",
+      "question": "You park parallel on the right side of a two-way street. Your car must face:",
+      "choices": [
+        "The same direction as traffic on your side of the street",
+        "Oncoming traffic",
+        "Either direction is fine",
+        "Toward the curb at an angle"
+      ],
+      "correct_answer": 0,
+      "explanation": "Park headed in the direction of travel, within 18 inches of the right curb. Parking against traffic (facing oncoming cars) is illegal.",
+      "topic": "Parking",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Parking Rules"
+    },
+    {
+      "id": "t10-q25",
+      "question": "It is illegal to park your car:",
+      "choices": [
+        "On a freeway except in a real emergency",
+        "In a metered space with time paid",
+        "In your own driveway",
+        "In a marked, unrestricted space"
+      ],
+      "correct_answer": 0,
+      "explanation": "Stopping or parking on a freeway is prohibited except for a genuine emergency. Move to the shoulder only if you must, and exit away from traffic.",
+      "topic": "Parking",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Where You May Not Park"
+    },
+    {
+      "id": "t10-q26",
+      "question": "You park downhill with a curb. The correct wheel position is:",
+      "choices": [
+        "Front wheels turned toward the curb",
+        "Front wheels turned away from the curb",
+        "Front wheels straight",
+        "Front wheels toward the road"
+      ],
+      "correct_answer": 0,
+      "explanation": "Downhill with a curb, turn the wheels toward the curb so a forward roll is stopped by it. Set the parking brake as well.",
+      "topic": "Parking",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Parking on Hills"
+    },
+    {
+      "id": "t10-q27",
+      "question": "An ambulance with siren is stuck behind you in heavy traffic with nowhere for you to go. You should:",
+      "choices": [
+        "Move toward the edge as space allows and stop, making a path when you can",
+        "Run the red light ahead to clear out",
+        "Stay exactly where you are and do nothing",
+        "Speed up through traffic"
+      ],
+      "correct_answer": 0,
+      "explanation": "Do your best to create a path—edge toward the side as gaps open and stop—without running red lights or making unsafe moves.",
+      "topic": "Emergency Vehicles",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Emergency Vehicles"
+    },
+    {
+      "id": "t10-q28",
+      "question": "It is illegal to follow within 300 feet of:",
+      "choices": [
+        "An emergency vehicle running its siren or flashing lights",
+        "Any passenger car",
+        "A slow-moving truck",
+        "A school bus with amber lights"
+      ],
+      "correct_answer": 0,
+      "explanation": "You must stay more than 300 feet back from a fire engine, ambulance, or police vehicle operating its siren or lights.",
+      "topic": "Emergency Vehicles",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Following Emergency Vehicles"
+    },
+    {
+      "id": "t10-q29",
+      "question": "Two vehicles reach a four-way stop at the same time, directly across from each other. Both go straight. They should:",
+      "choices": [
+        "Both proceed carefully, since their paths don't cross",
+        "Wait for each other indefinitely",
+        "Yield to the one on the right",
+        "Let the larger vehicle go first"
+      ],
+      "correct_answer": 0,
+      "explanation": "Opposing cars both going straight don't conflict, so both may proceed. Conflicts arise only when one turns across the other's path.",
+      "topic": "Right of Way",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Four-Way Stops"
+    },
+    {
+      "id": "t10-q30",
+      "question": "You're at a stop sign waiting to turn right; a pedestrian is crossing the street you want to enter. You should:",
+      "choices": [
+        "Wait for the pedestrian to clear your path before turning",
+        "Turn behind them quickly",
+        "Turn in front of them",
+        "Edge forward to make them stop"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yield to pedestrians crossing the road you're turning into. Wait until they've safely cleared your path before completing the turn.",
+      "topic": "Right of Way",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Turning and Pedestrians"
+    },
+    {
+      "id": "t10-q31",
+      "question": "A school bus ahead has amber lights flashing, then switches to red with the stop arm out. The amber-to-red change tells you:",
+      "choices": [
+        "The bus has gone from 'about to stop' to 'stopped—you must stop too'",
+        "You may now pass quickly",
+        "The bus is pulling back into traffic",
+        "Only the bus driver needs to act"
+      ],
+      "correct_answer": 0,
+      "explanation": "Amber means it's preparing to stop; red flashers and the extended stop arm mean stop and stay stopped while children load or cross.",
+      "topic": "School Zones",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — School Buses"
+    },
+    {
+      "id": "t10-q32",
+      "question": "A reduced school-zone speed limit is in force when:",
+      "choices": [
+        "Children are present (or as the sign and any flashing beacon indicate)",
+        "Only between 8 a.m. and 9 a.m.",
+        "At all hours, every day",
+        "Only on the first day of school"
+      ],
+      "correct_answer": 0,
+      "explanation": "School-zone limits apply when children are present, as posted—often reinforced by a flashing beacon during arrival and dismissal times. When in doubt, slow down.",
+      "topic": "School Zones",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — School Zones"
+    },
+    {
+      "id": "t10-q33",
+      "question": "Driving near a playground or park, the safest mindset is to:",
+      "choices": [
+        "Expect a child to run out and be ready to stop at any moment",
+        "Assume children will stay on the grass",
+        "Maintain speed and rely on your horn",
+        "Watch only the crosswalks"
+      ],
+      "correct_answer": 0,
+      "explanation": "Children near parks are unpredictable. Reduce speed, scan widely, and be prepared to stop suddenly.",
+      "topic": "School Zones",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Watching for Children"
+    },
+    {
+      "id": "t10-q34",
+      "question": "A bicyclist ahead is riding in the right portion of a wide lane. To pass, you should:",
+      "choices": [
+        "Wait for a clear, safe moment and pass leaving at least 3 feet of space",
+        "Pass immediately within the same lane, close to them",
+        "Honk and pass at speed",
+        "Tailgate until they pull over"
+      ],
+      "correct_answer": 0,
+      "explanation": "Give at least 3 feet when passing a bicyclist. If the lane is too narrow to do so, wait for a safe opportunity to move over.",
+      "topic": "Pedestrians & Cyclists",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Sharing the Road with Bicyclists"
+    },
+    {
+      "id": "t10-q35",
+      "question": "A pedestrian who is blind steps to the curb and extends a white cane toward the street. You should:",
+      "choices": [
+        "Stop well back and let them cross; they have the right of way",
+        "Honk so they know you're there",
+        "Drive slowly past in front of them",
+        "Proceed because they haven't entered the road yet"
+      ],
+      "correct_answer": 0,
+      "explanation": "Extending the cane signals intent to cross. Stop well back, stay quiet, and let the pedestrian cross—they always have the right of way.",
+      "topic": "Pedestrians & Cyclists",
+      "difficulty": "hard",
+      "handbook_reference": "California Driver's Handbook — Pedestrians with Disabilities"
+    },
+    {
+      "id": "t10-q36",
+      "question": "When a crosswalk is unmarked at an intersection (no painted lines), pedestrians:",
+      "choices": [
+        "Still have the right to cross, and you must yield to them",
+        "Have no right to cross there",
+        "Must find a marked crosswalk",
+        "May cross only with a signal"
+      ],
+      "correct_answer": 0,
+      "explanation": "A legal crosswalk exists at intersections even without paint. Yield to pedestrians crossing in these unmarked crosswalks just as you would at marked ones.",
+      "topic": "Pedestrians & Cyclists",
+      "difficulty": "medium",
+      "handbook_reference": "California Driver's Handbook — Crosswalks"
+    }
+  ]
+}

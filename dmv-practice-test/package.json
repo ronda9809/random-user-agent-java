@@ -1,0 +1,32 @@
+{
+  "name": "ca-dmv-practice-test",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "California DMV driver knowledge practice test simulator",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:phone": "vite build --config vite.config.singlefile.ts && node scripts/strip-module.mjs",
+    "preview": "vite preview",
+    "deploy": "tsc -b && vite build --base=/dmv/ && rm -rf publish && mkdir -p publish/dmv && cp -r dist/* publish/dmv/ && npx wrangler pages deploy publish --project-name ca-dmv-practice-test --branch main --commit-dirty=true",
+    "deploy:worker": "npx wrangler deploy --config cloudflare/dmv-router/wrangler.toml",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
