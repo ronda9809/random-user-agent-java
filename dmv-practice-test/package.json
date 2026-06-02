@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "build:phone": "vite build --config vite.config.singlefile.ts",
     "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name ca-dmv-practice-test",
     "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
