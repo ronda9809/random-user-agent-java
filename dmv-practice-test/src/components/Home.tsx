@@ -23,12 +23,27 @@ export default function Home({ history, onStart, onClearHistory }: HomeProps) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6">
+      <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
+        <h2 className="mb-1 text-base font-bold text-amber-900">
+          Renewing a license that's been expired a while?
+        </h2>
+        <p className="text-sm text-amber-900/90">
+          If your California license has been expired for about a year or more, the DMV usually
+          has you <strong>apply in person and pass the written test</strong>, and a multi-year
+          lapse is often handled like a new application — meaning the <strong>full 36-question
+          test (30 correct to pass)</strong>, and sometimes a behind-the-wheel drive test too.
+          So practice the <strong>Full Knowledge Test (36 Q)</strong> below — it covers everything
+          on the shorter renewal version as well. Confirm your exact requirements on your renewal
+          notice or with the DMV when you book your Santa Clara appointment.
+        </p>
+      </section>
+
       <section className="mb-6 rounded-xl bg-white p-5 shadow-sm">
         <h2 className="mb-1 text-lg font-bold text-dmv-blue">Choose your test mode</h2>
         <p className="mb-4 text-sm text-gray-600">
-          California's real exam is 36 questions for an original license (18 for a renewal),
-          and you need about 83% to pass. Modes and scoring can be changed in{' '}
-          <code className="rounded bg-gray-100 px-1">src/config/scoring.ts</code>.
+          The full California exam is 36 questions (30 correct to pass, ~83%); the short renewal
+          version is 18 questions (15 to pass). All questions come from the California Driver
+          Handbook.
         </p>
 
         <div className="grid gap-3 sm:grid-cols-2">

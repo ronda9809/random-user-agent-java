@@ -34,6 +34,21 @@ records. The renewal notice tells the driver whether a test is needed. The app
 includes a Renewal mode (18 questions) for the cases where a test **is**
 required.
 
+### Expired / lapsed license (important)
+
+If a California license has been **expired for roughly a year or more**, the
+DMV generally requires the holder to **apply in person and pass the written
+knowledge test**. A **multi-year lapse is commonly treated like a new/original
+application**, which means the **full 36-question test (30 correct to pass)**
+and sometimes a **behind-the-wheel drive test** as well. Sources differ on the
+exact threshold (12 months vs. 2 years), and individual requirements depend on
+the person's record — the renewal notice / DMV field office is authoritative.
+
+For this reason the app **defaults to the full 36-question test** and shows an
+on-screen note recommending it for anyone with a long lapse: practicing the
+full test also fully covers the shorter 18-question renewal version, since both
+draw from the same handbook material.
+
 ## Scoring decisions in this app
 
 - **Default pass threshold: 83%.** Official DMV materials state the standard as
