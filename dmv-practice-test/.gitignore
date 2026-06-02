@@ -1,6 +1,8 @@
 node_modules
 dist
 dist-ssr
+dist-phone
+DMV-Practice-Test.html
 *.local
 
 # TypeScript build artifacts (emitted by `tsc -b`)
