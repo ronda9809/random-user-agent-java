@@ -25,6 +25,7 @@ export default function ResultScreen({
 }: ResultScreenProps) {
   const [reviewFilter, setReviewFilter] = useState<'missed' | 'all'>('missed')
   const needed = correctNeededToPass(result.totalQuestions, result.passThresholdPercent)
+  const canMiss = result.totalQuestions - needed
   const weak = weakTopics(result)
 
   const reviewQuestions =
@@ -49,7 +50,7 @@ export default function ResultScreen({
         <div className="mt-2 text-5xl font-black">{result.scorePercent}%</div>
         <div className="mt-2 text-sm opacity-95">
           {result.correctCount} correct · {result.wrongCount} wrong · needed {needed} of{' '}
-          {result.totalQuestions} ({result.passThresholdPercent}%) to pass
+          {result.totalQuestions} to pass (could miss up to {canMiss})
         </div>
         {!result.passed && (
           <p className="mx-auto mt-3 max-w-md text-sm opacity-95">

@@ -59,11 +59,11 @@ export const TEST_MODES: Record<TestModeId, TestModeConfig> = {
   },
   renewal: {
     id: 'renewal',
-    label: 'Renewal Test (≈20 Q)',
+    label: 'Renewal Test (20 Q)',
     description:
-      "The renewal knowledge test. The real one is about 18–25 questions depending on the version (this is set to 20). You need 83% to pass. Same material as the full test — no feedback until you submit.",
+      "The renewal knowledge test: 20 questions, and you can miss up to 5 and still pass (15 correct). You may skip a question and come back, but anything left blank when you submit counts as a mistake. No feedback until you submit.",
     questionCount: 20,
-    passThresholdPercent: 83, // 17 of 20 correct
+    passThresholdPercent: 75, // 15 of 20 correct -> miss up to 5
     immediateFeedback: false,
     trackHistory: true,
   },
@@ -94,4 +94,9 @@ export const DEFAULT_MODE: TestModeId = 'renewal'
 /** Compute how many correct answers are needed to pass, given a total. */
 export function correctNeededToPass(total: number, thresholdPercent: number): number {
   return Math.ceil((thresholdPercent / 100) * total)
+}
+
+/** How many questions you can get wrong (or leave blank) and still pass. */
+export function allowedMistakes(total: number, thresholdPercent: number): number {
+  return total - correctNeededToPass(total, thresholdPercent)
 }

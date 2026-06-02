@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import type { TestBank, TestModeId, TestResult } from '../types'
-import { TEST_MODES, DEFAULT_MODE, correctNeededToPass } from '../config/scoring'
+import { TEST_MODES, DEFAULT_MODE, correctNeededToPass, allowedMistakes } from '../config/scoring'
 import { TEST_BANKS } from '../data'
 import HistoryPanel from './HistoryPanel'
 
@@ -24,16 +24,24 @@ export default function Home({ history, onStart, onClearHistory }: HomeProps) {
   return (
     <div className="mx-auto max-w-3xl px-4 py-6">
       <section className="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
-        <h2 className="mb-1 text-base font-bold text-amber-900">Getting ready for the renewal test</h2>
-        <p className="text-sm text-amber-900/90">
-          The California renewal knowledge test is usually <strong>about 18–25 questions</strong>
-          {' '}(this app uses 20), and you need <strong>roughly 83%</strong> to pass. The exact
-          number doesn't change what you study — every version draws from the same California
-          Driver Handbook material, all of which is covered here. Start with the{' '}
-          <strong>Renewal Test (≈20 Q)</strong> below; the longer Full Knowledge Test is there if
-          you'd like extra practice. Tip: when you book your Santa Clara appointment, you can
-          confirm whether a drive test is also needed.
-        </p>
+        <h2 className="mb-1 text-base font-bold text-amber-900">How the test is scored</h2>
+        <ul className="list-disc space-y-1 pl-5 text-sm text-amber-900/90">
+          <li>
+            The renewal test is about <strong>20 questions</strong>, and you can{' '}
+            <strong>miss up to 5</strong> and still pass (you need 15 correct).
+          </li>
+          <li>
+            <strong>Skips:</strong> you can skip a question and come back to it later. A skip only
+            counts against you if you <strong>leave it blank when you submit</strong> — then it's
+            a mistake. So make sure nothing is left unanswered.
+          </li>
+          <li>
+            The exact count and allowance vary slightly by test version (renewal often allows 3,
+            original up to 5). It's all the same Driver Handbook material — aim to miss as few as
+            possible. When you book the Santa Clara appointment you can confirm if a drive test is
+            also needed.
+          </li>
+        </ul>
       </section>
 
       <section className="mb-6 rounded-xl bg-white p-5 shadow-sm">
@@ -71,7 +79,9 @@ export default function Home({ history, onStart, onClearHistory }: HomeProps) {
                     {m.questionCount === 'all' ? 'All questions' : `${m.questionCount} questions`}
                   </span>
                   <span className="rounded bg-gray-100 px-2 py-0.5 text-gray-700">
-                    Pass: {m.passThresholdPercent}%
+                    {m.questionCount === 'all'
+                      ? `Pass: ${m.passThresholdPercent}%`
+                      : `Can miss ${allowedMistakes(m.questionCount, m.passThresholdPercent)}`}
                   </span>
                   <span className="rounded bg-gray-100 px-2 py-0.5 text-gray-700">
                     {m.immediateFeedback ? 'Answers shown instantly' : 'Graded at the end'}
@@ -89,6 +99,7 @@ export default function Home({ history, onStart, onClearHistory }: HomeProps) {
           {TEST_BANKS.map((test) => {
             const count = effectiveCount(test)
             const need = correctNeededToPass(count, modeConfig.passThresholdPercent)
+            const canMiss = allowedMistakes(count, modeConfig.passThresholdPercent)
             const attempts = history.filter((h) => h.testId === test.id)
             const best = attempts.reduce<number | null>(
               (acc, h) => (acc === null ? h.scorePercent : Math.max(acc, h.scorePercent)),
@@ -103,7 +114,7 @@ export default function Home({ history, onStart, onClearHistory }: HomeProps) {
                   <div className="font-semibold text-gray-900">{test.title}</div>
                   <div className="text-sm text-gray-600">{test.description}</div>
                   <div className="mt-1 text-xs text-gray-500">
-                    {count} questions · need {need} correct to pass
+                    {count} questions · need {need} correct (can miss {canMiss})
                     {attempts.length > 0 && (
                       <>
                         {' '}· taken {attempts.length}×
