@@ -36,20 +36,37 @@ npm run typecheck  # TypeScript check only
 
 ## How to use it
 
-1. **Pick a mode** (top of the home screen):
-   - **Original License Test** — 36 questions, 83% to pass. Mirrors the real
-     first-time exam. No feedback until you submit.
-   - **Renewal Test** — 18 questions, 83% to pass (the renewal exam is shorter).
+There are **360 original questions** across **10 full exams**, plus several ways
+to practice:
+
+- **♾️ Endless Practice** — a fresh, randomly mixed test pulled from the entire
+  360-question pool every time, so you rarely see the same test twice. Pick 20 or
+  36 questions. *This is the best way to keep drilling until it's second nature.*
+- **🔁 Retry my mistakes** — re-quiz yourself on just the questions you've missed
+  in past tests, with the explanation shown after each one.
+- **Topic drills** — focus on one of the 13 topics at a time (e.g. just
+  Right-of-Way), with immediate feedback. Great for shoring up weak spots.
+- **⏱ Timed exam mode** — optional 1-minute-per-question countdown that
+  auto-submits at zero, to simulate real-exam pressure.
+- **Readiness meter** — a *Ready / Almost / Keep practicing* signal at the top of
+  the home screen, based on your recent scores, so you can tell when she's
+  genuinely prepared.
+
+And the four classic modes still apply to any of the 10 exams:
+   - **Renewal Test** — 20 questions, can miss up to 5 (the default).
+   - **Full Knowledge Test** — 36 questions, 83% to pass (mirrors the first-time exam).
    - **Practice Test** — full 36-question simulated exam, results tracked.
    - **Study Mode** — every question, with the correct answer + explanation shown
-     **immediately**. Great for learning. Not scored as an attempt.
-2. **Pick one of the 4 tests** and press **Start**.
-3. Answer one question per screen. You can **flag** questions, **skip** them, use
+     **immediately**. Not scored as an attempt.
+
+How a session works:
+
+1. Answer one question per screen. You can **flag** questions, **skip** them, use
    **Review all** to jump around, then **Submit** at the end.
-4. See your **pass/fail**, score, number correct/wrong, **weak topics**, study
+2. See your **pass/fail**, score, number correct/wrong, **weak topics**, study
    recommendations, and a **detailed review** of every question.
-5. Your scores are saved on your device, and the home screen shows your
-   **improvement over time** per test.
+3. Your scores are saved on your device, and the home screen shows your
+   **improvement over time** per test (including Endless Practice).
 
 ---
 
@@ -97,11 +114,13 @@ dmv-practice-test/
 ├── src/
 │   ├── config/scoring.ts       # ← edit test length & pass threshold here
 │   ├── data/
-│   │   ├── test1.json … test4.json   # the 4 question banks (36 questions each)
-│   │   └── index.ts
+│   │   ├── test1.json … test10.json  # the 10 question banks (36 questions each)
+│   │   └── index.ts            # registers banks + the flattened question pool
 │   ├── lib/
 │   │   ├── grading.ts          # pure scoring logic
 │   │   ├── select.ts           # builds/shuffles a session's questions
+│   │   ├── sources.ts          # Endless / Topic-drill / Retry synthetic banks
+│   │   ├── readiness.ts        # the "are you ready?" meter logic
 │   │   └── storage.ts          # localStorage history
 │   ├── components/             # Home, TestRunner, ResultScreen, etc.
 │   ├── types.ts
@@ -126,14 +145,16 @@ Each question in `src/data/testN.json` follows this schema:
 }
 ```
 
-- `correct_answer` is the **zero-based index** into `choices`.
-- 4 tests × 36 questions = **144 original questions**, covering all required
+- `correct_answer` is the **zero-based index** into `choices`. By convention the
+  keyed answer is `0`; the app shuffles choice order at runtime.
+- 10 tests × 36 questions = **360 original questions**, covering all 13 required
   topics: road signs, right of way, speed limits, lane changes, parking, freeway
   driving, alcohol/drugs, pedestrians/cyclists, school zones, emergency vehicles,
-  following distance, distracted driving, and traffic signals.
+  following distance, distracted driving, and traffic signals. The Endless,
+  Topic-drill, and Retry modes all draw from this same pool.
 
 To add questions, just append more objects to a test's `questions` array (keep
-`id`s unique). To add a whole new test, create `test5.json` and register it in
+`id`s unique). To add a whole new test, create `test11.json` and register it in
 `src/data/index.ts`.
 
 ---

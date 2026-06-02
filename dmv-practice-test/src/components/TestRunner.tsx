@@ -2,25 +2,27 @@
 // skipping, a question navigator, and submission. In study/practice immediate-
 // feedback mode the correct answer is revealed right after answering.
 
-import { useMemo, useState } from 'react'
-import type { AnswerRecord, Question, TestBank, TestModeId } from '../types'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import type { AnswerRecord, Question, SessionOptions, TestBank, TestModeId } from '../types'
 import { TEST_MODES } from '../config/scoring'
 import { buildQuestionSet } from '../lib/select'
 
 interface TestRunnerProps {
   test: TestBank
   mode: TestModeId
+  options: SessionOptions
   onSubmit: (questions: Question[], answers: Record<string, AnswerRecord>) => void
   onExit: () => void
 }
 
-export default function TestRunner({ test, mode, onSubmit, onExit }: TestRunnerProps) {
+export default function TestRunner({ test, mode, options, onSubmit, onExit }: TestRunnerProps) {
   const modeConfig = TEST_MODES[mode]
+  const count = options.countOverride ?? modeConfig.questionCount
 
   // Build the question set once per mount so it stays stable during the session.
   const questions = useMemo(
-    () => buildQuestionSet(test.questions, modeConfig.questionCount, true),
-    [test, modeConfig.questionCount],
+    () => buildQuestionSet(test.questions, count, true),
+    [test, count],
   )
 
   const [current, setCurrent] = useState(0)
@@ -33,6 +35,36 @@ export default function TestRunner({ test, mode, onSubmit, onExit }: TestRunnerP
   const [revealed, setRevealed] = useState<Record<string, boolean>>({})
   const [showNavigator, setShowNavigator] = useState(false)
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false)
+
+  // --- Optional countdown timer -------------------------------------------
+  const [remaining, setRemaining] = useState<number | null>(options.timedSeconds ?? null)
+  const submittedRef = useRef(false)
+  // Keep the latest answers reachable from the timer callback without resetting it.
+  const answersRef = useRef(answers)
+  answersRef.current = answers
+
+  function finish(finalAnswers: Record<string, AnswerRecord>) {
+    if (submittedRef.current) return
+    submittedRef.current = true
+    onSubmit(questions, finalAnswers)
+  }
+
+  useEffect(() => {
+    if (options.timedSeconds == null) return
+    const id = setInterval(() => {
+      setRemaining((r) => {
+        if (r == null) return r
+        if (r <= 1) {
+          clearInterval(id)
+          finish(answersRef.current)
+          return 0
+        }
+        return r - 1
+      })
+    }, 1000)
+    return () => clearInterval(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [options.timedSeconds])
 
   const q = questions[current]
   const answer = answers[q.id]
@@ -67,8 +99,14 @@ export default function TestRunner({ test, mode, onSubmit, onExit }: TestRunnerP
   const isLast = current === questions.length - 1
 
   function handleSubmit() {
-    onSubmit(questions, answers)
+    finish(answers)
   }
+
+  const lowTime = remaining != null && remaining <= 30
+  const timeLabel =
+    remaining == null
+      ? null
+      : `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, '0')}`
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-5">
@@ -78,8 +116,20 @@ export default function TestRunner({ test, mode, onSubmit, onExit }: TestRunnerP
           <span>
             Question {current + 1} of {questions.length}
           </span>
-          <span>
-            {answeredCount} answered · {flaggedCount} flagged
+          <span className="flex items-center gap-3">
+            {timeLabel != null && (
+              <span
+                className={`rounded-full px-2 py-0.5 font-mono font-semibold tabular-nums ${
+                  lowTime ? 'bg-red-100 text-red-700' : 'bg-gray-100 text-gray-700'
+                }`}
+                aria-label="Time remaining"
+              >
+                ⏱ {timeLabel}
+              </span>
+            )}
+            <span>
+              {answeredCount} answered · {flaggedCount} flagged
+            </span>
           </span>
         </div>
         <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200">

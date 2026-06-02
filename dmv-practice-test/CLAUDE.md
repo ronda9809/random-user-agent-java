@@ -24,13 +24,15 @@ npm run typecheck  # tsc only
 | Path | What |
 | --- | --- |
 | `src/config/scoring.ts` | **Single source of truth for test length & scoring.** Edit `TEST_MODES` (questionCount, passThresholdPercent), `DEFAULT_MODE`, `MAX_DMV_ATTEMPTS`. |
-| `src/data/test1.json` … `test4.json` | The 4 question banks — 36 questions each, 144 total. |
-| `src/data/index.ts` | Registers the banks. Add a `test5.json` here to add a test. |
+| `src/data/test1.json` … `test10.json` | The 10 question banks — 36 questions each, **360 total**. |
+| `src/data/index.ts` | Registers the banks; also exposes `ALL_QUESTIONS` (the flattened pool), `QUESTION_COUNT`, and `getQuestionById`. Add a `test11.json` here to add a test. |
 | `src/lib/grading.ts` | Pure scoring + weak-topic logic. |
 | `src/lib/select.ts` | Builds a session: shuffles question order **and** answer-choice order. |
+| `src/lib/sources.ts` | Synthetic banks drawn from the pool: Endless, Topic drill, Retry-my-mistakes. |
+| `src/lib/readiness.ts` | Computes the Ready / Almost / Keep-practicing meter from history. |
 | `src/lib/storage.ts` | localStorage history (key `ca-dmv-practice:history:v1`). |
 | `src/components/` | `Home`, `TestRunner`, `ResultScreen`, `HistoryPanel`, `Header`. |
-| `src/types.ts` | Shared types (`Question`, `TestResult`, `TestModeId`, …). |
+| `src/types.ts` | Shared types + the runtime `TOPICS` array (source of the `Topic` type), `SessionOptions`. |
 | `VALIDATION.md` + `validation-prompt.txt` | How to fact-check questions against dmv.ca.gov using Playwright MCP. |
 | `NOTES.md` | Source citations & DMV scoring assumptions. |
 
@@ -57,12 +59,35 @@ Conventions:
   answer is index `0` in the JSON — the app **shuffles choice order at runtime**, so the
   correct option is not always first. Keep keys at `0` unless you have a reason not to.
 - Choice texts within a question must be **unique**.
-- `topic` must be one of the 13 in `src/types.ts` (`Topic`).
+- `topic` must be one of the 13 in the `TOPICS` array in `src/types.ts`.
 
-Quick integrity check after editing questions:
+Quick integrity check after editing questions (covers all 10 banks, ids unique, no dup stems):
 ```bash
-node -e 'for(const f of ["test1","test2","test3","test4"]){const d=require(`./src/data/${f}.json`);for(const q of d.questions){if(q.choices.length!==4||q.correct_answer<0||q.correct_answer>=q.choices.length||new Set(q.choices).size!==4)console.log("BAD",q.id)}}console.log("checked")'
+node -e 'const seen=new Set(),stem=new Map();for(let n=1;n<=10;n++){const d=require(`./src/data/test${n}.json`);for(const q of d.questions){if(seen.has(q.id))console.log("DUP ID",q.id);seen.add(q.id);const k=q.question.toLowerCase().replace(/[^a-z0-9]+/g," ").trim();if(stem.has(k))console.log("DUP STEM",q.id);else stem.set(k,q.id);if(q.choices.length!==4||q.correct_answer!==0||new Set(q.choices).size!==4)console.log("BAD",q.id)}}console.log("checked",seen.size)'
 ```
+
+## Practice modes & sources
+
+Two orthogonal concepts:
+- **Mode** (`TestModeId` in `scoring.ts`) controls *scoring/feedback/length*:
+  `renewal` (20 Q, miss 5, default), `original`/`practice` (36 Q, 83%), `study`
+  (immediate feedback, untracked).
+- **Source** = *which questions*. A fixed bank (`test1`…`test10`) **or** a
+  synthetic bank from `lib/sources.ts`:
+  - **Endless** (`buildEndlessBank`) — whole pool; TestRunner shuffles + slices to
+    the mode's length, so every run is fresh. Started with `renewal`/`original`.
+  - **Topic drill** (`buildTopicBank`) — one topic; started with `study` mode,
+    `countOverride` ≤ 15.
+  - **Retry** (`buildRetryBank`) — questions whose ids appear in past results'
+    `missedQuestionIds`; started with `study`, `countOverride: 'all'`. Returns
+    `null` when there are no recorded mistakes.
+
+`SessionOptions` (`{ countOverride?, timedSeconds? }`) is passed `App → TestRunner`
+to layer length overrides and the optional timer (1 min/question, graded modes
+only) on top of a mode. Synthetic/study sources are untracked, so they don't
+pollute the readiness meter; Endless is tracked and feeds both readiness and
+Retry. `HistoryPanel` groups by `testId` using each result's stored `testTitle`,
+so Endless shows up there too.
 
 ## Domain facts / decisions baked in
 

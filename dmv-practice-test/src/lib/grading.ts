@@ -18,6 +18,7 @@ export function gradeTest(input: GradeInput): TestResult {
 
   let correctCount = 0
   const missedQuestionIds: string[] = []
+  const correctQuestionIds: string[] = []
   const topicBreakdown: Record<string, { correct: number; total: number }> = {}
 
   for (const q of questions) {
@@ -29,6 +30,7 @@ export function gradeTest(input: GradeInput): TestResult {
     if (isCorrect) {
       correctCount += 1
       bucket.correct += 1
+      correctQuestionIds.push(q.id)
     } else {
       missedQuestionIds.push(q.id)
     }
@@ -55,6 +57,7 @@ export function gradeTest(input: GradeInput): TestResult {
     passThresholdPercent,
     topicBreakdown,
     missedQuestionIds,
+    correctQuestionIds,
   }
 }
 

@@ -2,6 +2,8 @@ node_modules
 dist
 dist-ssr
 dist-phone
+publish
+.playwright-mcp
 DMV-Practice-Test.html
 *.local
 

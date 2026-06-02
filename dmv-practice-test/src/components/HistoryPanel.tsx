@@ -1,11 +1,34 @@
 // Shows past attempts and improvement over time, grouped by test.
 
 import type { TestResult } from '../types'
-import { TEST_BANKS } from '../data'
 
 interface HistoryPanelProps {
   history: TestResult[]
   onClearHistory: () => void
+}
+
+/**
+ * Group history by testId, preserving the order each test was most recently
+ * taken (newest activity first). Uses the stored testTitle as the label, so
+ * synthetic sources like Endless Practice show up alongside the fixed exams.
+ */
+function groupByTest(history: TestResult[]): Array<{ id: string; title: string; attempts: TestResult[] }> {
+  const order: string[] = []
+  const byId = new Map<string, { id: string; title: string; attempts: TestResult[] }>()
+  for (const r of history) {
+    let group = byId.get(r.testId)
+    if (!group) {
+      group = { id: r.testId, title: r.testTitle, attempts: [] }
+      byId.set(r.testId, group)
+      order.push(r.testId)
+    }
+    group.attempts.push(r)
+  }
+  // attempts arrive newest-first; reverse to oldest -> newest for the chart
+  return order.map((id) => {
+    const g = byId.get(id)!
+    return { ...g, attempts: g.attempts.slice().reverse() }
+  })
 }
 
 function formatDate(iso: string): string {
@@ -48,13 +71,8 @@ export default function HistoryPanel({ history, onClearHistory }: HistoryPanelPr
       </div>
 
       <div className="space-y-5">
-        {TEST_BANKS.map((test) => {
-          // oldest -> newest for a left-to-right trend
-          const attempts = history
-            .filter((h) => h.testId === test.id)
-            .slice()
-            .reverse()
-          if (attempts.length === 0) return null
+        {groupByTest(history).map((test) => {
+          const attempts = test.attempts // oldest -> newest for a left-to-right trend
 
           const first = attempts[0].scorePercent
           const last = attempts[attempts.length - 1].scorePercent

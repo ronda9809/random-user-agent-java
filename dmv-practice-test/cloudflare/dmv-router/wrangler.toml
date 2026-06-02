@@ -1,0 +1,12 @@
+name = "lehyani-dmv-router"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Only these paths are intercepted; the rest of lehyani.com is untouched.
+[[routes]]
+pattern = "lehyani.com/dmv"
+zone_name = "lehyani.com"
+
+[[routes]]
+pattern = "lehyani.com/dmv/*"
+zone_name = "lehyani.com"

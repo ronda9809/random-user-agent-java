@@ -1,7 +1,14 @@
 // Top-level app: a tiny state machine between Home, Test, and Result screens.
 
 import { useEffect, useState } from 'react'
-import type { AnswerRecord, Question, TestBank, TestModeId, TestResult } from './types'
+import type {
+  AnswerRecord,
+  Question,
+  SessionOptions,
+  TestBank,
+  TestModeId,
+  TestResult,
+} from './types'
 import { TEST_MODES } from './config/scoring'
 import { gradeTest } from './lib/grading'
 import { loadHistory, saveResult, clearHistory } from './lib/storage'
@@ -12,7 +19,7 @@ import ResultScreen from './components/ResultScreen'
 
 type Screen =
   | { name: 'home' }
-  | { name: 'test'; test: TestBank; mode: TestModeId; sessionKey: number }
+  | { name: 'test'; test: TestBank; mode: TestModeId; options: SessionOptions; sessionKey: number }
   | {
       name: 'result'
       result: TestResult
@@ -20,6 +27,7 @@ type Screen =
       answers: Record<string, AnswerRecord>
       test: TestBank
       mode: TestModeId
+      options: SessionOptions
       attemptNumber: number
     }
 
@@ -32,14 +40,15 @@ export default function App() {
     setHistory(loadHistory())
   }, [])
 
-  function startTest(test: TestBank, mode: TestModeId) {
-    setScreen({ name: 'test', test, mode, sessionKey: Date.now() })
+  function startTest(test: TestBank, mode: TestModeId, options: SessionOptions = {}) {
+    setScreen({ name: 'test', test, mode, options, sessionKey: Date.now() })
     window.scrollTo(0, 0)
   }
 
   function submitTest(
     test: TestBank,
     mode: TestModeId,
+    options: SessionOptions,
     questions: Question[],
     answers: Record<string, AnswerRecord>,
   ) {
@@ -68,6 +77,7 @@ export default function App() {
       answers,
       test,
       mode,
+      options,
       attemptNumber,
     })
     window.scrollTo(0, 0)
@@ -101,8 +111,9 @@ export default function App() {
           key={screen.sessionKey}
           test={screen.test}
           mode={screen.mode}
+          options={screen.options}
           onSubmit={(questions, answers) =>
-            submitTest(screen.test, screen.mode, questions, answers)
+            submitTest(screen.test, screen.mode, screen.options, questions, answers)
           }
           onExit={goHome}
         />
@@ -114,7 +125,7 @@ export default function App() {
           questions={screen.questions}
           answers={screen.answers}
           attemptNumberForTest={screen.attemptNumber}
-          onRetake={() => startTest(screen.test, screen.mode)}
+          onRetake={() => startTest(screen.test, screen.mode, screen.options)}
           onHome={goHome}
         />
       )}
