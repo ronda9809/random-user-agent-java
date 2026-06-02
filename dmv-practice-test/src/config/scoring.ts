@@ -51,7 +51,7 @@ export const TEST_MODES: Record<TestModeId, TestModeConfig> = {
     id: 'original',
     label: 'Full Knowledge Test (36 Q)',
     description:
-      'The complete California knowledge test: 36 questions, 30 correct (83%) to pass — no feedback until you submit. RECOMMENDED if your license has been expired for a year or more, since the DMV usually treats a long lapse like a new application and gives the full 36-question test.',
+      'Optional extra practice: the complete 36-question pool, 30 correct (83%) to pass. Longer and tougher than the renewal test — good for thorough preparation since it covers everything.',
     questionCount: 36,
     passThresholdPercent: 83, // 30 of 36 correct
     immediateFeedback: false,
@@ -59,11 +59,11 @@ export const TEST_MODES: Record<TestModeId, TestModeConfig> = {
   },
   renewal: {
     id: 'renewal',
-    label: 'Short Renewal Test (18 Q)',
+    label: 'Renewal Test (≈20 Q)',
     description:
-      'The shorter renewal version: 18 questions, 15 correct (83%) to pass. This is what standard/senior renewals get when a test is required. If your license lapsed for several years, practice the full 36-question test above instead.',
-    questionCount: 18,
-    passThresholdPercent: 83, // ~15 of 18 correct
+      "The renewal knowledge test. The real one is about 18–25 questions depending on the version (this is set to 20). You need 83% to pass. Same material as the full test — no feedback until you submit.",
+    questionCount: 20,
+    passThresholdPercent: 83, // 17 of 20 correct
     immediateFeedback: false,
     trackHistory: true,
   },
@@ -89,7 +89,7 @@ export const TEST_MODES: Record<TestModeId, TestModeConfig> = {
   },
 }
 
-export const DEFAULT_MODE: TestModeId = 'original'
+export const DEFAULT_MODE: TestModeId = 'renewal'
 
 /** Compute how many correct answers are needed to pass, given a total. */
 export function correctNeededToPass(total: number, thresholdPercent: number): number {
