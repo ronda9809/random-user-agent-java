@@ -13,5 +13,14 @@ export default defineConfig({
     assetsInlineLimit: 100000000,
     cssCodeSplit: false,
     reportCompressedSize: false,
+    // Emit a classic (non-module) IIFE bundle. Inline `type="module"` scripts
+    // are blocked by browsers when the file is opened directly via file://,
+    // which would leave the page blank on a phone. An IIFE runs fine offline.
+    rollupOptions: {
+      output: {
+        format: 'iife',
+        inlineDynamicImports: true,
+      },
+    },
   },
 })
