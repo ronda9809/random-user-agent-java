@@ -34,6 +34,7 @@ type Screen =
 export default function App() {
   const [history, setHistory] = useState<TestResult[]>([])
   const [screen, setScreen] = useState<Screen>({ name: 'home' })
+  const [confirmLeave, setConfirmLeave] = useState(false)
 
   // Load saved history once on startup.
   useEffect(() => {
@@ -84,8 +85,18 @@ export default function App() {
   }
 
   function goHome() {
+    setConfirmLeave(false)
     setScreen({ name: 'home' })
     window.scrollTo(0, 0)
+  }
+
+  // Going home from inside a running test discards progress, so confirm first.
+  function requestHome() {
+    if (screen.name === 'test') {
+      setConfirmLeave(true)
+    } else {
+      goHome()
+    }
   }
 
   function handleClearHistory() {
@@ -100,7 +111,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-dmv-gray">
-      <Header subtitle={subtitle} />
+      <Header subtitle={subtitle} onHome={requestHome} />
 
       {screen.name === 'home' && (
         <Home history={history} onStart={startTest} onClearHistory={handleClearHistory} />
@@ -115,7 +126,7 @@ export default function App() {
           onSubmit={(questions, answers) =>
             submitTest(screen.test, screen.mode, screen.options, questions, answers)
           }
-          onExit={goHome}
+          onExit={requestHome}
         />
       )}
 
@@ -128,6 +139,31 @@ export default function App() {
           onRetake={() => startTest(screen.test, screen.mode, screen.options)}
           onHome={goHome}
         />
+      )}
+
+      {confirmLeave && (
+        <div className="fixed inset-0 z-20 flex items-center justify-center bg-black/40 p-4">
+          <div className="w-full max-w-sm rounded-xl bg-white p-5 shadow-xl">
+            <h3 className="text-lg font-bold text-gray-900">Leave this test?</h3>
+            <p className="mt-2 text-sm text-gray-600">
+              You're in the middle of a test. If you leave now, this attempt won't be saved.
+            </p>
+            <div className="mt-4 flex gap-2">
+              <button
+                onClick={() => setConfirmLeave(false)}
+                className="flex-1 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700"
+              >
+                Keep going
+              </button>
+              <button
+                onClick={goHome}
+                className="flex-1 rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-white hover:bg-red-600"
+              >
+                Leave test
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       <footer className="mx-auto max-w-3xl px-4 py-6 text-center text-xs text-gray-400">

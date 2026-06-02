@@ -233,6 +233,12 @@ export default function TestRunner({ test, mode, options, onSubmit, onExit }: Te
         >
           Review all
         </button>
+        <button
+          onClick={onExit}
+          className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-600 hover:border-red-300 hover:text-red-600"
+        >
+          ✕ Exit
+        </button>
 
         <div className="ml-auto flex gap-2">
           {!isLast && (
