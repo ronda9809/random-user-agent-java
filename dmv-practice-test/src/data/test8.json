@@ -95,7 +95,7 @@
     },
     {
       "id": "t8-q7",
-      "question": "What does a black-and-white rectangular sign reading 'DO NOT ENTER' mean?",
+      "question": "What does a red-and-white sign reading 'DO NOT ENTER' mean?",
       "choices": [
         "You may not enter the roadway from your direction",
         "The road is closed only to trucks",
@@ -283,7 +283,7 @@
         "They indicate a lane that is closed to all traffic"
       ],
       "correct_answer": 0,
-      "explanation": "Double solid white lines around an HOV/carpool lane mean you cannot cross them; you may enter or exit only where the lines are broken or open.",
+      "explanation": "Never change lanes across the double solid white lines bordering a carpool/HOV lane; enter or exit only where the line is broken.",
       "topic": "Freeway Driving",
       "difficulty": "medium",
       "handbook_reference": "California Driver's Handbook — Carpool/HOV Lanes"

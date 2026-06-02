@@ -187,13 +187,13 @@
       "id": "t5-q13",
       "question": "You must never park or stop your vehicle where with respect to a fire station?",
       "choices": [
-        "Within 20 feet of a fire station driveway, or directly across the street within 75 feet of a posted fire station entrance",
+        "Within 15 feet of a fire station driveway",
         "Within 5 feet of a fire station on the same side only",
         "Anywhere on the same block as a fire station",
         "Within 100 feet of a fire station in any direction"
       ],
       "correct_answer": 0,
-      "explanation": "It is illegal to park within 20 feet of a fire station driveway, or on the opposite side of the street within 75 feet of a posted fire station entrance.",
+      "explanation": "You may not park within 15 feet of a fire station driveway (and never within 15 feet of a fire hydrant).",
       "topic": "Emergency Vehicles",
       "difficulty": "hard",
       "handbook_reference": "California Driver's Handbook — Emergency Vehicles"
@@ -478,7 +478,7 @@
         "Motorcycles take much longer to stop than cars"
       ],
       "correct_answer": 0,
-      "explanation": "Motorcycles can stop in a short distance, so allow extra following distance (four or more seconds) to give yourself time to react.",
+      "explanation": "Motorcycles can stop in a short distance, so allow a safe three-second following distance (more in poor conditions) to give yourself time to react.",
       "topic": "Following Distance",
       "difficulty": "medium",
       "handbook_reference": "California Driver's Handbook — Following Distance"

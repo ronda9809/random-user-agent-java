@@ -37,13 +37,13 @@
       "id": "t6-q3",
       "question": "What does a white painted curb mean?",
       "choices": [
-        "Stop only long enough to pick up or drop off passengers or mail",
+        "Stop only long enough to pick up or drop off passengers",
         "Park as long as you like during daylight hours",
         "Loading zone for commercial freight trucks only",
         "No stopping, standing, or parking at any time"
       ],
       "correct_answer": 0,
-      "explanation": "A white curb means you may stop only long enough to pick up or drop off passengers or mail.",
+      "explanation": "A white curb means you may stop only long enough to pick up or drop off passengers.",
       "topic": "Parking",
       "difficulty": "easy",
       "handbook_reference": "California Driver's Handbook — Parking (Colored Curbs)"
@@ -373,7 +373,7 @@
         "Half a mile"
       ],
       "correct_answer": 0,
-      "explanation": "Five seconds at 55 mph covers about 300 feet — roughly the length of a football field — all driven essentially blind.",
+      "explanation": "Five seconds at 55 mph covers roughly 400 feet — about the length of a football field — all driven essentially blind.",
       "topic": "Distracted Driving",
       "difficulty": "medium",
       "handbook_reference": "California Driver's Handbook — Distracted Driving"

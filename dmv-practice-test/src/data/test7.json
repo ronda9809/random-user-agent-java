@@ -103,7 +103,7 @@
         "10 mph"
       ],
       "correct_answer": 0,
-      "explanation": "At a blind intersection (no stop sign or signal and view blocked within 100 feet), the speed limit is 15 mph.",
+      "explanation": "At a blind intersection — one with no stop signs at any corner and a blocked view — you may not drive faster than 15 mph. Slow down and edge forward until you can see.",
       "topic": "Speed Limits",
       "difficulty": "medium",
       "handbook_reference": "California Driver's Handbook — Maximum Speed Limit"
@@ -238,7 +238,7 @@
         "One second"
       ],
       "correct_answer": 0,
-      "explanation": "In poor conditions like rain, fog, or snow, increase your following distance to at least four seconds.",
+      "explanation": "In poor conditions like rain, fog, or snow, increase your following distance well beyond the normal three seconds — about four or more seconds.",
       "topic": "Following Distance",
       "difficulty": "easy",
       "handbook_reference": "California Driver's Handbook — Following Distance"
