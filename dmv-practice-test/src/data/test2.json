@@ -9,7 +9,8 @@
       "choices": [
         "Must still drive slower if conditions make 65 mph unsafe",
         "May always drive exactly 65 mph",
-        "May drive 10 mph over if traffic is light"
+        "May drive 10 mph over if traffic is light",
+        "May ignore the limit when roads are clear"
       ],
       "correct_answer": 0,
       "explanation": "The basic speed law says you may never drive faster than is safe for current conditions, regardless of the posted limit. Rain, traffic, or curves may require a slower speed.",
@@ -20,7 +21,7 @@
     {
       "id": "t2-q2",
       "question": "When approaching a railroad crossing without gates or signals, you should not exceed:",
-      "choices": ["15 mph", "25 mph", "35 mph"],
+      "choices": ["15 mph", "25 mph", "35 mph", "20 mph"],
       "correct_answer": 0,
       "explanation": "Within 100 feet of a railroad crossing where you cannot see the tracks for 400 feet in both directions, the speed limit is 15 mph.",
       "topic": "Speed Limits",
@@ -33,7 +34,8 @@
       "choices": [
         "A railroad crossing ahead",
         "A no-parking zone",
-        "A one-way street"
+        "A one-way street",
+        "A speed limit change"
       ],
       "correct_answer": 0,
       "explanation": "A round sign is used as a warning for a railroad crossing ahead. Slow down, look, and listen for trains.",
@@ -44,7 +46,7 @@
     {
       "id": "t2-q4",
       "question": "A red triangle (downward-pointing) sign means:",
-      "choices": ["Yield", "Stop", "Do not enter"],
+      "choices": ["Yield", "Stop", "Do not enter", "Wrong way"],
       "correct_answer": 0,
       "explanation": "A downward-pointing red and white triangle is a YIELD sign. Slow down and give the right of way to traffic and pedestrians; stop if necessary.",
       "topic": "Road Signs",
@@ -57,7 +59,8 @@
       "choices": [
         "Oncoming traffic and pedestrians",
         "Only pedestrians",
-        "No one, if you have a green light"
+        "No one, if you have a green light",
+        "Only vehicles behind you"
       ],
       "correct_answer": 0,
       "explanation": "When turning left, you must yield to oncoming vehicles and to pedestrians in or entering the crosswalk, even on a green light (unless you have a green arrow).",
@@ -71,7 +74,8 @@
       "choices": [
         "Yield to traffic on the through road",
         "Proceed first because they arrived",
-        "Always go straight without yielding"
+        "Always go straight without yielding",
+        "Expect through traffic to stop"
       ],
       "correct_answer": 0,
       "explanation": "At a T-intersection without signs or signals, traffic on the through road (the top of the T) has the right of way. The driver on the terminating road must yield.",
@@ -85,7 +89,8 @@
       "choices": [
         "Signal, check mirrors, check blind spot, then move",
         "Move, then signal, then check mirrors",
-        "Check blind spot only, then move quickly"
+        "Check blind spot only, then move quickly",
+        "Honk, then move without signaling"
       ],
       "correct_answer": 0,
       "explanation": "Signal your intention, check your mirrors, glance over your shoulder to check the blind spot, and only then change lanes when it is clear.",
@@ -99,7 +104,8 @@
       "choices": [
         "Lanes going the same direction; you may change lanes when safe",
         "You may never cross it",
-        "The lanes go in opposite directions"
+        "The lanes go in opposite directions",
+        "The road is about to end"
       ],
       "correct_answer": 0,
       "explanation": "A broken (dashed) white line separates lanes of traffic moving in the same direction and indicates you may change lanes when it is safe.",
@@ -113,7 +119,8 @@
       "choices": [
         "Following a motorcycle on a wet road",
         "Driving on a dry, empty road",
-        "You are the only car on the highway"
+        "You are the only car on the highway",
+        "You are driving below the speed limit"
       ],
       "correct_answer": 0,
       "explanation": "Increase your following distance when conditions reduce traction or visibility, such as following a motorcycle, driving on wet roads, or in poor weather.",
@@ -127,7 +134,8 @@
       "choices": [
         "Perception/reaction distance plus braking distance",
         "Only the distance the brakes take to stop the car",
-        "Only your reaction time"
+        "Only your reaction time",
+        "Only the speed of the vehicle"
       ],
       "correct_answer": 0,
       "explanation": "Total stopping distance includes the distance traveled while you perceive and react to a hazard plus the distance the vehicle travels while braking. Both increase with speed.",
@@ -141,7 +149,8 @@
       "choices": [
         "Time",
         "Black coffee",
-        "A cold shower"
+        "A cold shower",
+        "Exercise and fresh air"
       ],
       "correct_answer": 0,
       "explanation": "Only time allows your body to eliminate alcohol. Coffee, food, and cold showers do not lower your BAC or make you safe to drive.",
@@ -155,7 +164,8 @@
       "choices": [
         "Dangerous and can result in a DUI",
         "Always legal because it is prescribed",
-        "Fine as long as you drive slowly"
+        "Fine as long as you drive slowly",
+        "Legal if you take less than the dose"
       ],
       "correct_answer": 0,
       "explanation": "Any drug — legal, prescription, or over-the-counter — that impairs your ability to drive safely can lead to a DUI charge. Check labels for drowsiness warnings.",
@@ -169,7 +179,8 @@
       "choices": [
         "Stop, because the road is not divided",
         "Continue without stopping",
-        "Slow to 10 mph and pass"
+        "Slow to 10 mph and pass",
+        "Pass only if no children are visible"
       ],
       "correct_answer": 0,
       "explanation": "On an undivided road, traffic in both directions must stop for a school bus with flashing red lights. You only continue if a raised divider or median separates the roadways.",
@@ -183,7 +194,8 @@
       "choices": [
         "Slow down; children may be present",
         "The school is closed",
-        "You may not enter the area"
+        "You may not enter the area",
+        "Stop completely and wait"
       ],
       "correct_answer": 0,
       "explanation": "Flashing yellow lights at a school zone tell you to slow down and use extra caution because children are likely present.",
@@ -197,7 +209,8 @@
       "choices": [
         "Clear the intersection, then pull right and stop",
         "Stop immediately in the middle of the intersection",
-        "Make a U-turn to avoid it"
+        "Make a U-turn to avoid it",
+        "Speed through the red light ahead"
       ],
       "correct_answer": 0,
       "explanation": "Never stop in an intersection. Continue through, then pull to the right edge of the road and stop to let the emergency vehicle pass.",
@@ -208,7 +221,7 @@
     {
       "id": "t2-q16",
       "question": "It is illegal to follow within how many feet of a fire truck answering an emergency call?",
-      "choices": ["300 feet", "100 feet", "50 feet"],
+      "choices": ["300 feet", "100 feet", "50 feet", "500 feet"],
       "correct_answer": 0,
       "explanation": "You may not follow within 300 feet of any fire engine, police vehicle, ambulance, or other emergency vehicle that has its siren or flashing lights on.",
       "topic": "Emergency Vehicles",
@@ -221,7 +234,8 @@
       "choices": [
         "Stop and let them finish crossing",
         "Drive around behind them",
-        "Honk so they hurry"
+        "Honk so they hurry",
+        "Inch forward to pressure them"
       ],
       "correct_answer": 0,
       "explanation": "You must yield and stop for pedestrians in a crosswalk. Allow them to finish crossing safely before you proceed.",
@@ -235,7 +249,8 @@
       "choices": [
         "Merge into the bike lane within 200 feet of the corner after checking for cyclists",
         "Turn from the regular lane across the bike lane",
-        "Never enter the bike lane for any reason"
+        "Never enter the bike lane for any reason",
+        "Speed up to turn before any cyclist arrives"
       ],
       "correct_answer": 0,
       "explanation": "When making a right turn, you may merge into the bike lane within 200 feet of the corner, after signaling and checking that no cyclist is in the way. This avoids cutting across a cyclist's path.",
@@ -249,7 +264,8 @@
       "choices": [
         "Parking for persons with disabilities",
         "Passenger loading only",
-        "Commercial loading only"
+        "Commercial loading only",
+        "Emergency vehicles only"
       ],
       "correct_answer": 0,
       "explanation": "A blue curb indicates parking reserved for persons with disabilities who display a valid placard or license plate.",
@@ -260,7 +276,7 @@
     {
       "id": "t2-q20",
       "question": "When you parallel park, your tires should end up no more than how far from the curb?",
-      "choices": ["18 inches", "3 feet", "6 inches"],
+      "choices": ["18 inches", "3 feet", "6 inches", "2 feet"],
       "correct_answer": 0,
       "explanation": "When you finish parallel parking, your wheels should be within 18 inches of the curb.",
       "topic": "Parking",
@@ -273,7 +289,8 @@
       "choices": [
         "Passing and faster-moving traffic",
         "Slow vehicles and trucks",
-        "Vehicles about to exit"
+        "Vehicles about to exit",
+        "Vehicles entering the freeway"
       ],
       "correct_answer": 0,
       "explanation": "The left lane is for passing and faster traffic. Slower traffic should keep right, and vehicles preparing to exit should be in the right lanes.",
@@ -287,7 +304,8 @@
       "choices": [
         "Continue to the next exit",
         "Back up on the shoulder to the exit",
-        "Stop and wait for a gap to reverse"
+        "Stop and wait for a gap to reverse",
+        "Make a U-turn across the median"
       ],
       "correct_answer": 0,
       "explanation": "Never stop or back up on a freeway. If you miss your exit, keep going and use the next one. Backing up causes serious collisions.",
@@ -301,7 +319,8 @@
       "choices": [
         "Not at all, even hands-free",
         "Only in hands-free mode",
-        "Only to send text messages"
+        "Only to send text messages",
+        "Only on local streets"
       ],
       "correct_answer": 0,
       "explanation": "Drivers under 18 may not use any wireless device while driving, even in hands-free mode, except in a genuine emergency.",
@@ -315,7 +334,8 @@
       "choices": [
         "Eating, grooming, or adjusting the radio while driving",
         "Keeping both hands on the wheel",
-        "Scanning the road ahead"
+        "Scanning the road ahead",
+        "Checking your mirrors regularly"
       ],
       "correct_answer": 0,
       "explanation": "Distracted driving is any activity that takes your attention from driving — eating, grooming, reaching for objects, or using a phone. Keep your focus on the road.",
@@ -329,7 +349,8 @@
       "choices": [
         "You may turn left; oncoming traffic is stopped",
         "You must yield to oncoming traffic before turning",
-        "Left turns are prohibited"
+        "Left turns are prohibited",
+        "You may only turn if a sign permits it"
       ],
       "correct_answer": 0,
       "explanation": "A green left-turn arrow means you have a protected turn — oncoming traffic is stopped by a red light — so you may turn left, but still watch for pedestrians.",
@@ -343,7 +364,8 @@
       "choices": [
         "After stopping, if it is safe and no sign prohibits it",
         "Without stopping",
-        "Only when the light turns green"
+        "Only when the light turns green",
+        "Only if a green arrow appears"
       ],
       "correct_answer": 0,
       "explanation": "You may turn right on a red light after coming to a complete stop and yielding to pedestrians and cross traffic, unless a sign prohibits the turn.",
@@ -357,7 +379,8 @@
       "choices": [
         "You may turn, but must yield to oncoming traffic and pedestrians",
         "You have a protected turn",
-        "Turning is not allowed"
+        "Turning is not allowed",
+        "Stop and wait for a green arrow"
       ],
       "correct_answer": 0,
       "explanation": "A flashing yellow arrow means turns are permitted, but you must yield to oncoming vehicles and to pedestrians before completing your turn.",
@@ -371,7 +394,8 @@
       "choices": [
         "When there are no vehicles approaching within 200 feet",
         "Anywhere, at any time",
-        "Only at red lights"
+        "Only at red lights",
+        "Only at intersections with a signal"
       ],
       "correct_answer": 0,
       "explanation": "In a residential area you may make a U-turn when no vehicle is approaching within 200 feet, unless a sign prohibits it. Never make a U-turn near a curve or crest of a hill.",
@@ -385,7 +409,8 @@
       "choices": [
         "A carpool / high-occupancy vehicle (HOV) lane",
         "An exit-only lane",
-        "A lane reserved for trucks"
+        "A lane reserved for trucks",
+        "A lane that is closed ahead"
       ],
       "correct_answer": 0,
       "explanation": "A white diamond painted on the pavement marks a carpool/HOV lane, which may only be used by vehicles carrying the required number of occupants during posted hours.",
@@ -399,7 +424,8 @@
       "choices": [
         "Toward the curb",
         "Away from the curb",
-        "Straight ahead"
+        "Straight ahead",
+        "It does not matter which way"
       ],
       "correct_answer": 0,
       "explanation": "When parking downhill (with or without a curb), turn your wheels toward the curb or edge of the road so the car would roll into the curb if it moved.",
@@ -413,7 +439,8 @@
       "choices": [
         "A construction or work zone ahead",
         "A school crossing",
-        "A scenic route"
+        "A scenic route",
+        "A recreation area"
       ],
       "correct_answer": 0,
       "explanation": "Orange signs indicate construction, maintenance, or work zones. Slow down, expect workers and equipment, and obey reduced speed limits.",
@@ -427,7 +454,8 @@
       "choices": [
         "Doubled",
         "Waived",
-        "The same as anywhere else"
+        "The same as anywhere else",
+        "Reduced by half"
       ],
       "correct_answer": 0,
       "explanation": "Traffic fines are often doubled in construction or work zones when workers are present. Slow down and drive with extra caution.",
@@ -441,7 +469,8 @@
       "choices": [
         "More dangerous than either alone",
         "Less dangerous",
-        "Cancelled out"
+        "Cancelled out",
+        "Unchanged"
       ],
       "correct_answer": 0,
       "explanation": "Combining alcohol with medications can multiply impairment, making driving far more dangerous than either substance alone.",
@@ -455,7 +484,8 @@
       "choices": [
         "Slow down and pass only when there is at least 3 feet of clearance",
         "Honk and squeeze past",
-        "Pass closely to save time"
+        "Pass closely to save time",
+        "Tailgate until they move over"
       ],
       "correct_answer": 0,
       "explanation": "Treat bicyclists as you would any slow-moving vehicle. Slow down and wait for a safe opportunity to pass with at least 3 feet of clearance.",
@@ -469,7 +499,8 @@
       "choices": [
         "Four seconds long",
         "One car length",
-        "Half a second long"
+        "Half a second long",
+        "Two feet long"
       ],
       "correct_answer": 0,
       "explanation": "Look for a gap of at least four seconds when merging so you and the vehicles around you have room to adjust safely.",
@@ -483,7 +514,8 @@
       "choices": [
         "Turn it off manually so you don't mislead other drivers",
         "Leave it on until it stops by itself",
-        "Turn on your hazard lights instead"
+        "Turn on your hazard lights instead",
+        "Ignore it; other drivers will understand"
       ],
       "correct_answer": 0,
       "explanation": "Always make sure your signal turns off after a turn or lane change. A signal left blinking can mislead other drivers into thinking you are about to turn.",

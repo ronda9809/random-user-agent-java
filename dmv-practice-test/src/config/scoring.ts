@@ -89,7 +89,7 @@ export const TEST_MODES: Record<TestModeId, TestModeConfig> = {
   },
 }
 
-export const DEFAULT_MODE: TestModeId = 'original'
+export const DEFAULT_MODE: TestModeId = 'renewal'
 
 /** Compute how many correct answers are needed to pass, given a total. */
 export function correctNeededToPass(total: number, thresholdPercent: number): number {

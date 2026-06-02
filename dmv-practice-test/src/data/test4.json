@@ -9,7 +9,8 @@
       "choices": [
         "Ease off the gas and avoid sudden braking or steering",
         "Brake hard immediately",
-        "Accelerate to regain traction"
+        "Accelerate to regain traction",
+        "Turn the wheel sharply to one side"
       ],
       "correct_answer": 0,
       "explanation": "If your tires lose contact with the road (hydroplaning), gently ease off the accelerator and keep the wheel steady. Avoid hard braking or sharp steering until traction returns. Slowing down in the rain prevents it.",
@@ -23,7 +24,8 @@
       "choices": [
         "A violation of the basic speed law",
         "Always legal at the posted speed",
-        "Only a problem at night"
+        "Only a problem at night",
+        "Allowed if you have good tires"
       ],
       "correct_answer": 0,
       "explanation": "The basic speed law requires you to drive at a safe speed for current conditions. On ice or in heavy rain, the safe speed may be far below the posted limit.",
@@ -37,7 +39,8 @@
       "choices": [
         "If you are going slower than other traffic, move to the right lane",
         "All traffic must use the right lane",
-        "Slow down and stay where you are"
+        "Slow down and stay where you are",
+        "The right lane is closed ahead"
       ],
       "correct_answer": 0,
       "explanation": "This sign tells slower drivers to use the right lane so faster traffic can pass on the left, improving flow and safety.",
@@ -51,7 +54,8 @@
       "choices": [
         "You are traveling against traffic and must turn around safely",
         "The road ahead is closed",
-        "Make a U-turn immediately, anywhere"
+        "Make a U-turn immediately, anywhere",
+        "The road is one-way in your direction"
       ],
       "correct_answer": 0,
       "explanation": "A red 'WRONG WAY' sign warns that you are going the wrong direction, often on a one-way street or freeway ramp. Slow down, pull over, and safely turn around.",
@@ -65,7 +69,8 @@
       "choices": [
         "The vehicle heading uphill",
         "The vehicle heading downhill",
-        "The larger vehicle"
+        "The larger vehicle",
+        "The vehicle that arrived first"
       ],
       "correct_answer": 0,
       "explanation": "On a steep, narrow mountain road, the vehicle going downhill must yield by backing up if needed, because the uphill vehicle has more control backing up the grade.",
@@ -79,7 +84,8 @@
       "choices": [
         "Stop and yield to the cross traffic before proceeding",
         "Proceed because you stopped first",
-        "Expect cross traffic to stop for you"
+        "Expect cross traffic to stop for you",
+        "Proceed if you arrived before them"
       ],
       "correct_answer": 0,
       "explanation": "A stop sign on your side only stops your traffic. You must yield to cross traffic that does not have a stop sign before entering the intersection.",
@@ -93,7 +99,8 @@
       "choices": [
         "Freely when clear, since all traffic moves the same direction",
         "Never",
-        "Only by stopping first"
+        "Only by stopping first",
+        "Only at intersections"
       ],
       "correct_answer": 0,
       "explanation": "On a one-way street all lanes move the same way, so you may change lanes when it is clear. Still signal and check your blind spots.",
@@ -107,7 +114,8 @@
       "choices": [
         "Increases crash risk and rarely saves time",
         "Is the safest way to travel",
-        "Is encouraged in heavy traffic"
+        "Is encouraged in heavy traffic",
+        "Is legal only on freeways"
       ],
       "correct_answer": 0,
       "explanation": "Frequent, aggressive lane changes greatly increase collision risk and rarely get you there faster. Pick a lane and maintain a steady, safe speed.",
@@ -121,7 +129,8 @@
       "choices": [
         "Greater than the normal three seconds",
         "Less than normal",
-        "Exactly one second"
+        "Exactly one second",
+        "The same as on dry roads"
       ],
       "correct_answer": 0,
       "explanation": "On wet, icy, or gravel surfaces, traction is reduced and stopping takes longer, so increase your following distance well beyond three seconds.",
@@ -135,7 +144,8 @@
       "choices": [
         "Have room to react and avoid hazards",
         "Drive faster legally",
-        "Park more easily"
+        "Park more easily",
+        "Save fuel"
       ],
       "correct_answer": 0,
       "explanation": "Keeping space ahead, behind, and to the sides gives you time and room to see hazards and maneuver safely.",
@@ -149,7 +159,8 @@
       "choices": [
         "Face an automatic license suspension",
         "Avoid all penalties",
-        "Receive only a warning"
+        "Receive only a warning",
+        "Have the charges dropped"
       ],
       "correct_answer": 0,
       "explanation": "Under the implied consent law, refusing a chemical test after a lawful DUI arrest results in an automatic license suspension and additional penalties.",
@@ -160,7 +171,7 @@
     {
       "id": "t4-q12",
       "question": "The legal BAC limit for drivers operating a commercial vehicle is:",
-      "choices": ["0.04%", "0.08%", "0.01%"],
+      "choices": ["0.04%", "0.08%", "0.01%", "0.05%"],
       "correct_answer": 0,
       "explanation": "Commercial drivers may not operate with a BAC of 0.04% or higher — half the limit for regular drivers.",
       "topic": "Alcohol & Drugs",
@@ -173,7 +184,8 @@
       "choices": [
         "Slow to 25 mph or less whenever children are nearby",
         "Maintain the regular street speed",
-        "Slow down only on school days at noon"
+        "Slow down only on school days at noon",
+        "Slow down only if you see a crossing guard"
       ],
       "correct_answer": 0,
       "explanation": "Where signs post a reduced school-zone speed when children are present, you must slow to that limit (often 25 mph or less) whenever children are in the area.",
@@ -187,7 +199,8 @@
       "choices": [
         "Slow down and be ready to stop, as a child may follow",
         "Maintain speed and honk",
-        "Swerve into the other lane"
+        "Swerve into the other lane",
+        "Speed up to pass the area quickly"
       ],
       "correct_answer": 0,
       "explanation": "A ball or toy in the road often means a child may run after it. Slow down and be prepared to stop.",
@@ -201,7 +214,8 @@
       "choices": [
         "Obey the officer, even if it contradicts the signal",
         "Follow the green light instead",
-        "Stop and wait for the signal to change"
+        "Stop and wait for the signal to change",
+        "Choose whichever is safer at the moment"
       ],
       "correct_answer": 0,
       "explanation": "Directions from a police officer or authorized person always override traffic signals and signs. Follow the officer's instructions.",
@@ -215,7 +229,8 @@
       "choices": [
         "A fire official directs you to do so",
         "You are in a hurry",
-        "No firefighters are visible"
+        "No firefighters are visible",
+        "The hose appears to be empty"
       ],
       "correct_answer": 0,
       "explanation": "It is illegal to drive over an unprotected fire hose without permission from a fire department official.",
@@ -229,7 +244,8 @@
       "choices": [
         "Slow down and give them as much room as possible",
         "Maintain speed and stay in your lane",
-        "Honk continuously"
+        "Honk continuously",
+        "Expect them to step off the road"
       ],
       "correct_answer": 0,
       "explanation": "Give pedestrians walking on the roadway extra space and reduce speed, especially where there is no sidewalk.",
@@ -243,7 +259,8 @@
       "choices": [
         "Check for approaching cars and bicyclists",
         "Open it quickly to get out",
-        "Rely on other drivers to avoid you"
+        "Rely on other drivers to avoid you",
+        "Open it halfway as a warning"
       ],
       "correct_answer": 0,
       "explanation": "Always check mirrors and look back for cars and bicyclists before opening a door into traffic. 'Dooring' a cyclist can cause serious injury and is illegal.",
@@ -257,7 +274,8 @@
       "choices": [
         "Stop only long enough to load or unload passengers or freight",
         "No stopping at any time",
-        "Free unlimited parking"
+        "Free unlimited parking",
+        "Parking for disabled persons only"
       ],
       "correct_answer": 0,
       "explanation": "A yellow curb is a loading zone — stop only long enough to load or unload passengers or freight, within the posted time limit.",
@@ -271,7 +289,8 @@
       "choices": [
         "Is illegal and can result in a heavy fine",
         "Is allowed for short stops",
-        "Is fine if no disabled driver is present"
+        "Is fine if no disabled driver is present",
+        "Is allowed after business hours"
       ],
       "correct_answer": 0,
       "explanation": "Only vehicles displaying a valid disabled-person placard or plate may use these spaces. Violations carry significant fines.",
@@ -285,7 +304,8 @@
       "choices": [
         "Move over a lane if it is safe, or adjust speed to allow merging",
         "Speed up to block the merge",
-        "Stop in your lane"
+        "Stop in your lane",
+        "Move onto the shoulder"
       ],
       "correct_answer": 0,
       "explanation": "Help merging traffic by moving over when safe or adjusting your speed to open a gap. Cooperative merging keeps traffic flowing safely.",
@@ -299,7 +319,8 @@
       "choices": [
         "Stopping to rest, getting fresh air, or switching drivers",
         "Driving faster to finish sooner",
-        "Turning the heater up"
+        "Turning the heater up",
+        "Turning the music up loud"
       ],
       "correct_answer": 0,
       "explanation": "Fatigue seriously impairs driving. Stop and rest, take a break, get fresh air, or change drivers. Never rely on tricks to stay awake.",
@@ -313,7 +334,8 @@
       "choices": [
         "Before you start driving, while parked",
         "While driving slowly",
-        "At every red light"
+        "At every red light",
+        "While merging onto the freeway"
       ],
       "correct_answer": 0,
       "explanation": "Program your GPS and choose your music before you begin driving. Adjusting devices while moving takes your eyes and mind off the road.",
@@ -327,7 +349,8 @@
       "choices": [
         "The brain cannot fully focus on driving and another task at once",
         "Experienced drivers can safely text",
-        "Hands-free means distraction-free"
+        "Hands-free means distraction-free",
+        "Multitasking improves with practice"
       ],
       "correct_answer": 0,
       "explanation": "Research shows the brain switches between tasks rather than truly multitasking. Even hands-free phone use causes 'inattention blindness,' so driving deserves your full attention.",
@@ -341,7 +364,8 @@
       "choices": [
         "Proceed if the intersection is clear",
         "Speed up before it turns yellow",
-        "Stop and check for cross traffic"
+        "Stop and check for cross traffic",
+        "Proceed without looking"
       ],
       "correct_answer": 0,
       "explanation": "A green light means you may go if the way is clear. You must still yield to any vehicles or pedestrians lawfully in the intersection.",
@@ -355,7 +379,8 @@
       "choices": [
         "Continue through the intersection with caution",
         "Slam on the brakes",
-        "Speed up well above the limit"
+        "Speed up well above the limit",
+        "Stop in the middle of the crosswalk"
       ],
       "correct_answer": 0,
       "explanation": "If you cannot stop safely when the light turns yellow, proceed through with caution. Hard braking risks a rear-end collision.",
@@ -369,7 +394,8 @@
       "choices": [
         "You may use this lane",
         "The lane is closed ahead",
-        "Move out of the lane immediately"
+        "Move out of the lane immediately",
+        "Slow down and prepare to stop"
       ],
       "correct_answer": 0,
       "explanation": "A steady downward green arrow over a lane means it is open for you to drive in. A red X means the lane is closed and you must move out of it.",
@@ -383,7 +409,8 @@
       "choices": [
         "Yield to the pedestrian to avoid a collision",
         "Proceed because you have the green",
-        "Honk and continue at speed"
+        "Honk and continue at speed",
+        "Accelerate to pass before they cross"
       ],
       "correct_answer": 0,
       "explanation": "Even when a pedestrian is crossing illegally, you must do everything reasonable to avoid hitting them. Safety comes before right of way.",
@@ -397,7 +424,8 @@
       "choices": [
         "An obstruction or median you must not drive over",
         "A parking area",
-        "A passing zone"
+        "A passing zone",
+        "A bicycle lane"
       ],
       "correct_answer": 0,
       "explanation": "Yellow-and-black diagonal stripes mark a fixed obstruction or median. Keep to the marked travel lane and do not drive across them.",
@@ -411,7 +439,8 @@
       "choices": [
         "Toward the edge of the road",
         "Away from the edge of the road",
-        "Straight ahead"
+        "Straight ahead",
+        "Toward the center of the road"
       ],
       "correct_answer": 0,
       "explanation": "Downhill with no curb, point your wheels toward the edge of the road so a rolling car would leave the roadway rather than enter traffic. Set the parking brake.",
@@ -422,7 +451,7 @@
     {
       "id": "t4-q31",
       "question": "The speed limit in an alley is:",
-      "choices": ["15 mph", "25 mph", "10 mph"],
+      "choices": ["15 mph", "25 mph", "10 mph", "20 mph"],
       "correct_answer": 0,
       "explanation": "The speed limit in any alley is 15 mph. Watch carefully for pedestrians and vehicles entering or exiting.",
       "topic": "Speed Limits",
@@ -435,7 +464,8 @@
       "choices": [
         "Slow down before entering the curve",
         "Brake hard in the middle of the curve",
-        "Accelerate hard into the curve"
+        "Accelerate hard into the curve",
+        "Maintain a high constant speed"
       ],
       "correct_answer": 0,
       "explanation": "Reduce your speed before you enter a curve. Braking in the curve can cause a skid; slow down first, then accelerate gently out of it.",
@@ -449,7 +479,8 @@
       "choices": [
         "Illegal, even if the driver has not been drinking",
         "Legal if the bottle is half full",
-        "Allowed for passengers only"
+        "Allowed for passengers only",
+        "Legal if stored on the floor"
       ],
       "correct_answer": 0,
       "explanation": "It is illegal to have an open container of alcohol in the passenger compartment, whether or not anyone is drinking from it. Store it in the trunk.",
@@ -463,7 +494,8 @@
       "choices": [
         "Yield and allow the cyclist to move left as a vehicle would",
         "Pass on the left quickly",
-        "Ignore the signal"
+        "Ignore the signal",
+        "Honk and continue"
       ],
       "correct_answer": 0,
       "explanation": "Bicyclists may use the traffic lane to turn left, just like a car. Yield to a signaling cyclist and give them room to complete the turn.",
@@ -477,7 +509,8 @@
       "choices": [
         "Far ahead as well as your mirrors and sides",
         "Only the car directly in front of you",
-        "Only the speedometer"
+        "Only the speedometer",
+        "Only the lane markings"
       ],
       "correct_answer": 0,
       "explanation": "Good drivers scan far ahead (10–15 seconds), check mirrors regularly, and stay aware of vehicles beside them to anticipate hazards early.",
@@ -491,7 +524,8 @@
       "choices": [
         "Wait until the lane is clear before moving over",
         "Change lanes anyway and let them brake",
-        "Speed up and cut in front"
+        "Speed up and cut in front",
+        "Move over slowly to push them aside"
       ],
       "correct_answer": 0,
       "explanation": "Never change lanes when a vehicle is in your blind spot. Adjust your speed and wait until you can clearly see the lane is open.",

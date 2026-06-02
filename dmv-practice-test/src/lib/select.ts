@@ -13,10 +13,26 @@ export function shuffle<T>(items: T[]): T[] {
 }
 
 /**
+ * Return a copy of a question with its answer choices shuffled and
+ * `correct_answer` remapped to the new position. This keeps the correct option
+ * from always sitting in the same slot.
+ */
+export function shuffleChoices(q: Question): Question {
+  const order = shuffle(q.choices.map((_, i) => i))
+  return {
+    ...q,
+    choices: order.map((i) => q.choices[i]),
+    correct_answer: order.indexOf(q.correct_answer),
+  }
+}
+
+/**
  * Build the list of questions for a session.
  * - `count` 'all' uses every question (study mode).
  * - A numeric `count` caps the length; if the bank has fewer, all are used.
  * - When `randomize` is true the order is shuffled so retakes feel fresh.
+ * - Answer choices within each question are always shuffled so the correct
+ *   answer is not always in the same position.
  */
 export function buildQuestionSet(
   questions: Question[],
@@ -24,6 +40,6 @@ export function buildQuestionSet(
   randomize: boolean,
 ): Question[] {
   const ordered = randomize ? shuffle(questions) : questions.slice()
-  if (count === 'all') return ordered
-  return ordered.slice(0, Math.min(count, ordered.length))
+  const limited = count === 'all' ? ordered : ordered.slice(0, Math.min(count, ordered.length))
+  return limited.map(shuffleChoices)
 }

@@ -6,7 +6,7 @@
     {
       "id": "t3-q1",
       "question": "The maximum speed limit on most California freeways is:",
-      "choices": ["65 mph unless otherwise posted", "55 mph", "75 mph"],
+      "choices": ["65 mph unless otherwise posted", "55 mph", "75 mph", "60 mph"],
       "correct_answer": 0,
       "explanation": "The maximum speed limit on most California freeways is 65 mph. Some freeways are posted at 70 mph, and you must always obey the posted limit.",
       "topic": "Speed Limits",
@@ -16,7 +16,7 @@
     {
       "id": "t3-q2",
       "question": "When towing a trailer or driving a vehicle with three or more axles, the maximum speed limit is:",
-      "choices": ["55 mph", "65 mph", "45 mph"],
+      "choices": ["55 mph", "65 mph", "45 mph", "50 mph"],
       "correct_answer": 0,
       "explanation": "Vehicles towing trailers, and trucks with three or more axles, are limited to 55 mph on California highways.",
       "topic": "Speed Limits",
@@ -29,7 +29,8 @@
       "choices": [
         "Regulatory sign telling you a law to obey",
         "Warning of a curve",
-        "Guide sign showing distances"
+        "Guide sign showing distances",
+        "Construction warning"
       ],
       "correct_answer": 0,
       "explanation": "White rectangular signs are regulatory signs. They tell you about laws you must obey, such as speed limits or 'No U-Turn.'",
@@ -43,7 +44,8 @@
       "choices": [
         "The action shown is not allowed",
         "The action is recommended",
-        "Caution is advised"
+        "Caution is advised",
+        "The action is allowed only at night"
       ],
       "correct_answer": 0,
       "explanation": "A red circle with a diagonal slash indicates a prohibited action, such as 'No Left Turn' or 'No U-Turn.'",
@@ -57,7 +59,8 @@
       "choices": [
         "Yield to all traffic and pedestrians on the road",
         "Proceed because you were there first",
-        "Sound your horn and pull out"
+        "Sound your horn and pull out",
+        "Expect traffic to slow for you"
       ],
       "correct_answer": 0,
       "explanation": "When entering a roadway from a private driveway, alley, or parking lot, you must yield to all approaching vehicles and to pedestrians on the sidewalk.",
@@ -71,7 +74,8 @@
       "choices": [
         "The vehicle that arrived and stopped first",
         "The vehicle on the left",
-        "The fastest vehicle"
+        "The fastest vehicle",
+        "The vehicle going straight only"
       ],
       "correct_answer": 0,
       "explanation": "At a four-way stop, the first vehicle to come to a complete stop goes first. If two arrive together, the one on the right has the right of way.",
@@ -85,7 +89,8 @@
       "choices": [
         "It is unsafe and other drivers do not expect it",
         "It is always illegal everywhere",
-        "It saves no time"
+        "It saves no time",
+        "Your signals will not work there"
       ],
       "correct_answer": 0,
       "explanation": "Changing lanes in an intersection is dangerous because turning vehicles and cross traffic do not expect it. Complete lane changes before or after the intersection.",
@@ -99,7 +104,8 @@
       "choices": [
         "Only to prepare for or complete a left turn",
         "As a regular travel lane",
-        "For passing slow traffic"
+        "For passing slow traffic",
+        "For parking during off-peak hours"
       ],
       "correct_answer": 0,
       "explanation": "A two-way center left-turn lane is only for making left turns (or U-turns where legal). It is not a passing or travel lane, and you should not drive in it for more than about 200 feet.",
@@ -113,7 +119,8 @@
       "choices": [
         "About the length of a football field or more",
         "About one car length",
-        "About 20 feet"
+        "About 20 feet",
+        "About 10 feet"
       ],
       "correct_answer": 0,
       "explanation": "At highway speeds, total stopping distance (reaction plus braking) can exceed the length of a football field. This is why following distance and speed control matter so much.",
@@ -127,7 +134,8 @@
       "choices": [
         "Increase your following distance from the car ahead and let them pass",
         "Brake suddenly to warn them",
-        "Speed up well above the limit"
+        "Speed up well above the limit",
+        "Tap your brakes repeatedly"
       ],
       "correct_answer": 0,
       "explanation": "If someone tailgates you, give yourself more room ahead so you can brake gradually, and move over or slow slightly to let the tailgater pass when safe. Brake-checking is dangerous.",
@@ -141,7 +149,8 @@
       "choices": [
         "License suspension, fines, and possible jail",
         "A warning only",
-        "No consequences for first offenders"
+        "No consequences for first offenders",
+        "Only a small fine"
       ],
       "correct_answer": 0,
       "explanation": "Even a first DUI conviction can mean license suspension, large fines, DUI school, and possible jail time, plus higher insurance costs.",
@@ -155,7 +164,8 @@
       "choices": [
         "Chemical testing for alcohol or drugs if lawfully arrested for DUI",
         "Random vehicle searches anytime",
-        "Waive all traffic tickets"
+        "Waive all traffic tickets",
+        "Skip future eye exams"
       ],
       "correct_answer": 0,
       "explanation": "Under California's implied consent law, by driving you agree to take a breath or blood test if lawfully arrested for DUI. Refusing leads to automatic license suspension.",
@@ -169,7 +179,8 @@
       "choices": [
         "Obey the crossing guard's instructions",
         "Follow only the traffic signal",
-        "Proceed if no children are visible"
+        "Proceed if no children are visible",
+        "Honk to let them know you see them"
       ],
       "correct_answer": 0,
       "explanation": "You must obey directions from a school crossing guard, who has authority to stop traffic so children can cross safely.",
@@ -183,7 +194,8 @@
       "choices": [
         "May cross unexpectedly and ignore traffic",
         "Always use crosswalks",
-        "Are easy to see at all times"
+        "Are easy to see at all times",
+        "Always wait for the signal"
       ],
       "correct_answer": 0,
       "explanation": "Children can be unpredictable and may dart into the street without looking. Slow down and scan carefully in school zones.",
@@ -197,7 +209,8 @@
       "choices": [
         "Complete the turn or clear the intersection, then pull over",
         "Stop in the intersection and wait",
-        "Reverse out of the intersection"
+        "Reverse out of the intersection",
+        "Turn left immediately without looking"
       ],
       "correct_answer": 0,
       "explanation": "Never block an intersection. Clear it safely, then pull to the right and stop until the emergency vehicle passes.",
@@ -211,7 +224,8 @@
       "choices": [
         "Generally do not need to stop, but stay alert",
         "Must always stop completely",
-        "Must make a U-turn"
+        "Must make a U-turn",
+        "Must reverse to the shoulder"
       ],
       "correct_answer": 0,
       "explanation": "On a divided highway with a median, you usually do not need to stop for an emergency vehicle traveling on the opposite side, but remain alert. Always yield when in doubt.",
@@ -225,7 +239,8 @@
       "choices": [
         "Pedestrians and bicyclists crossing your path",
         "Only cars behind you",
-        "Aircraft overhead"
+        "Aircraft overhead",
+        "Only oncoming traffic"
       ],
       "correct_answer": 0,
       "explanation": "Right turns are a common place to conflict with pedestrians in the crosswalk and bicyclists going straight. Check carefully before turning.",
@@ -239,7 +254,8 @@
       "choices": [
         "Have the same rights and responsibilities as drivers",
         "Must always ride on the sidewalk",
-        "Do not have to obey traffic signals"
+        "Do not have to obey traffic signals",
+        "May only ride in parks"
       ],
       "correct_answer": 0,
       "explanation": "Bicyclists have the same rights and must obey the same rules as drivers. Share the road and treat them as legitimate road users.",
@@ -253,7 +269,8 @@
       "choices": [
         "Parking is allowed for a limited time",
         "No parking at any time",
-        "Loading zone for freight"
+        "Loading zone for freight",
+        "Parking for residents only"
       ],
       "correct_answer": 0,
       "explanation": "A green curb means parking is allowed for a limited time, shown on a nearby sign or painted on the curb.",
@@ -267,7 +284,8 @@
       "choices": [
         "Within 15 feet of a fire hydrant",
         "More than 18 inches from the curb only",
-        "On any residential street"
+        "On any residential street",
+        "Within 50 feet of any intersection"
       ],
       "correct_answer": 0,
       "explanation": "You may not park within 15 feet of a fire hydrant. Other no-park areas include crosswalks, in front of driveways, and on a sidewalk.",
@@ -281,7 +299,8 @@
       "choices": [
         "Hold the wheel firmly, ease off the gas, and steer to the shoulder",
         "Brake hard immediately",
-        "Speed up to keep control"
+        "Speed up to keep control",
+        "Turn sharply toward the shoulder"
       ],
       "correct_answer": 0,
       "explanation": "In a blowout, grip the wheel firmly, take your foot off the gas, let the car slow gradually, and steer smoothly to the shoulder. Hard braking can cause a skid.",
@@ -295,7 +314,8 @@
       "choices": [
         "Pull as far right onto the shoulder as possible and turn on hazard lights",
         "Stop in the travel lane and call for help",
-        "Stand in the lane to flag down help"
+        "Stand in the lane to flag down help",
+        "Leave the car in the lane and walk away"
       ],
       "correct_answer": 0,
       "explanation": "Move as far onto the right shoulder as you can, turn on your hazard lights, and stay aware of traffic. Exit on the side away from traffic if you must leave the vehicle.",
@@ -309,7 +329,8 @@
       "choices": [
         "The length of a football field without watching the road",
         "Only a few feet",
-        "Half a car length"
+        "Half a car length",
+        "About 30 feet"
       ],
       "correct_answer": 0,
       "explanation": "At 55 mph, five seconds covers roughly 100 yards — the length of a football field — essentially blind. This is why texting while driving is so dangerous.",
@@ -323,7 +344,8 @@
       "choices": [
         "Pull over and stop in a safe place first",
         "Hold the phone low so police can't see",
-        "Drive slower and steer with your knees"
+        "Drive slower and steer with your knees",
+        "Answer quickly and keep talking"
       ],
       "correct_answer": 0,
       "explanation": "Even hands-free calls are distracting. The safest choice is to pull over to a safe spot. Adults may use hands-free if needed, but full attention belongs on driving.",
@@ -337,7 +359,8 @@
       "choices": [
         "Stop and remain stopped until the light turns green",
         "Slow down and proceed if clear",
-        "Stop only if cross traffic is present"
+        "Stop only if cross traffic is present",
+        "Proceed if you are turning left"
       ],
       "correct_answer": 0,
       "explanation": "A steady red light means stop. Remain stopped until the light turns green, except for a permitted right turn on red after a complete stop.",
@@ -351,7 +374,8 @@
       "choices": [
         "Treat it as a four-way stop",
         "Drive through without stopping",
-        "Wait until power returns"
+        "Wait until power returns",
+        "Yield only to traffic on your left"
       ],
       "correct_answer": 0,
       "explanation": "When traffic signals are dark due to a power failure, treat the intersection as a four-way stop: stop, then proceed in turn when it is safe.",
@@ -365,7 +389,8 @@
       "choices": [
         "You may not turn in that direction until it changes",
         "You may turn after stopping",
-        "Yield, then turn"
+        "Yield, then turn",
+        "Turn only if no cars are coming"
       ],
       "correct_answer": 0,
       "explanation": "A red arrow means you must stop and may not make the indicated turn. Wait until a green light or green arrow appears.",
@@ -379,7 +404,8 @@
       "choices": [
         "Close to the right edge of the road or in the right-turn lane",
         "In the center of the road",
-        "In the left lane"
+        "In the left lane",
+        "Anywhere, as long as you signal"
       ],
       "correct_answer": 0,
       "explanation": "Before turning right, move close to the right edge of the road or into the designated right-turn lane, signal, and complete the turn into the nearest right lane.",
@@ -393,7 +419,8 @@
       "choices": [
         "Stop; a train is approaching",
         "Slow down only",
-        "Proceed with caution"
+        "Proceed with caution",
+        "Stop only if you see the train"
       ],
       "correct_answer": 0,
       "explanation": "Flashing red lights at a railroad crossing mean stop and wait. Do not cross until the lights stop flashing and any gate has fully raised.",
@@ -407,7 +434,8 @@
       "choices": [
         "Toward the edge of the road",
         "Away from the edge of the road",
-        "Straight ahead"
+        "Straight ahead",
+        "Toward the center line"
       ],
       "correct_answer": 0,
       "explanation": "Uphill with no curb, turn your wheels toward the edge of the road so a rolling car moves away from traffic. Always set the parking brake.",
@@ -421,7 +449,8 @@
       "choices": [
         "Use high beams on dark open roads but dim them for oncoming traffic",
         "Always use high beams",
-        "Drive with parking lights only"
+        "Drive with parking lights only",
+        "Use high beams only in the city"
       ],
       "correct_answer": 0,
       "explanation": "Use high beams on open roads to see farther, but switch to low beams within 500 feet of an oncoming vehicle and 300 feet when following another vehicle.",
@@ -435,7 +464,8 @@
       "choices": [
         "From 30 minutes after sunset to 30 minutes before sunrise, and when visibility is low",
         "Only after midnight",
-        "Only on freeways"
+        "Only on freeways",
+        "Only when it is fully dark"
       ],
       "correct_answer": 0,
       "explanation": "Headlights are required from 30 minutes after sunset until 30 minutes before sunrise, and any time you cannot see at least 1,000 feet ahead (rain, fog, etc.). You must also use them when using your wipers.",
@@ -449,7 +479,8 @@
       "choices": [
         "Impairs driving and can lead to a DUI",
         "Is safe if you feel fine",
-        "Only affects passengers"
+        "Only affects passengers",
+        "Is legal while driving if you have a card"
       ],
       "correct_answer": 0,
       "explanation": "Driving under the influence of marijuana is illegal and dangerous. It slows reaction time and impairs coordination and judgment, and can result in a DUI.",
@@ -463,7 +494,8 @@
       "choices": [
         "May finish crossing, and you must let them",
         "Must run back to the curb",
-        "Lose the right of way immediately"
+        "Lose the right of way immediately",
+        "Must wait in the median"
       ],
       "correct_answer": 0,
       "explanation": "Pedestrians who have already started crossing on a 'Walk' signal may finish even after it begins flashing. Drivers must yield until they complete the crossing.",
@@ -477,7 +509,8 @@
       "choices": [
         "Move into the correct exit lane early and slow down on the off-ramp, not the freeway",
         "Brake hard in the travel lane",
-        "Cross several lanes quickly at the last moment"
+        "Cross several lanes quickly at the last moment",
+        "Stop on the freeway to check the exit number"
       ],
       "correct_answer": 0,
       "explanation": "Plan ahead: move to the exit lane in advance, signal, and reduce speed on the deceleration ramp rather than slowing abruptly in the through lanes.",
@@ -491,7 +524,8 @@
       "choices": [
         "Check that the lane is clear, including your blind spot",
         "Increase your speed",
-        "Turn up the radio"
+        "Turn up the radio",
+        "Flash your high beams"
       ],
       "correct_answer": 0,
       "explanation": "Always make sure the lane you are moving into is clear. Signal, check mirrors, and look over your shoulder to clear your blind spot before changing lanes.",
