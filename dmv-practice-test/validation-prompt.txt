@@ -1,0 +1,13 @@
+You have the Playwright MCP available. I need you to fact-check this DMV practice test against official California sources.
+
+1. Using Playwright, open https://www.dmv.ca.gov/portal/driver-handbooks/ and find the current official California Driver Handbook (English). Read the relevant sections. If a PDF is offered, download it locally and read that.
+
+2. Also open the DMV pages on the knowledge test and license renewal to confirm: the number of questions, how many mistakes are allowed to pass, the passing percentage, the number of attempts, and the rules when a license has been expired for several years (is the written test required? is it treated like a new/original application? is a behind-the-wheel drive test required?).
+
+3. Open every file in src/data/test1.json … test4.json (144 questions). For each question, verify the question text, the keyed correct answer (correct_answer is the index into choices), and the explanation against the handbook. Flag anything inaccurate, outdated, ambiguous, or where a distractor is arguably also correct.
+
+4. Verify the scoring config in src/config/scoring.ts (question counts and pass thresholds) matches what the DMV actually does for a renewal vs. an original / lapsed-license applicant.
+
+5. Produce a report: a table of any discrepancies with the exact handbook citation, then, with my approval, apply fixes to the JSON/config and rebuild (npm run build and npm run build:phone).
+
+Cite the specific handbook section or DMV URL for every correction. Do not change a question unless you can cite a source. Be conservative: if the handbook is silent or ambiguous, leave the question and note it.
